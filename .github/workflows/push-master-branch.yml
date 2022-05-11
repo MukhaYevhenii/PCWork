@@ -20,7 +20,7 @@ jobs:
         node-version: '>=14'
         check-latest: true
    
-    - name: Install Salesforce CLI
+    - name: 'Install Salesforce CLI'
       run: |
         npm install sfdx-cli
         node_modules/sfdx-cli/bin/run --version
