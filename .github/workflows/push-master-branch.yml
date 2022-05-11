@@ -33,5 +33,5 @@ jobs:
     - name: 'Authenticate against dev hub'
       run: node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_QA -s -a LRQA
       
-    - name: Run checkonly deploy
+    - name: 'Run checkonly deploy'
       run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json 
