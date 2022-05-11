@@ -3,7 +3,7 @@ name: Push to development branch from feature
 # Definition when the workflow should run
 on:
     push:
-      branches: [ development ]
+      branches: [ main ]
       paths:
         - 'force-app/**'
 jobs:
