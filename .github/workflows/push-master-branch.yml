@@ -31,8 +31,8 @@ jobs:
       shell: bash
       run: 'echo ${{ secrets.SFDX_URL}} > SFDX_QA'
       
-    - name: 'Authenticate against dev hub'
-      run: node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_QA -s -a LRQA
+    - name: 'Authenticate to Production Org'
+      run: sfdx auth:sfdxurl:store -f SFDX_QA -s -a production
       
     - name: 'Run checkonly deploy'
       run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json 
