@@ -27,11 +27,11 @@ jobs:
         mkdir sfdx-cli
         tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
         ./sfdx-cli/install
-            
+        
     - name: 'Populate auth file with SFDX_URL secret'
       shell: bash
       run: 'echo ${{ secrets.SFDX_URL}} > SFDX_QA'
-      
+ 
     - name: 'Authenticate to Production Org'
       run: sfdx auth:sfdxurl:store -f SFDX_QA -s -a production
       
