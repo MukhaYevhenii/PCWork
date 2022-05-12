@@ -6,4 +6,4 @@ public class WebToLeadControllerTest {
         WebToLeadController test = new WebToLeadController();
         System.assertEquals(WebToLeadController.successValue, true);
     }
-}
+} 
