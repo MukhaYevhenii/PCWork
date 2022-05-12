@@ -3,6 +3,7 @@
 	<types>
 		<members>FormMainPageController</members>
 		<members>WebToLeadController</members>
+		<members>WebToLeadControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
