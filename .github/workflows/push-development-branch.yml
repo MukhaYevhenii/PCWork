@@ -1,4 +1,5 @@
-name: Push to development branch from feature
+# Unique name for this workflow
+name: Pull request to development branch.
 
 # Definition when the workflow should run
 on:
@@ -30,7 +31,7 @@ jobs:
     - name: 'Populate auth file with SFDX_URL secret'
       shell: bash
       run: 'echo ${{ secrets.SFDX_URL}} > SFDX_QA'
-  
+ 
     - name: 'Authenticate to Production Org'
       run: sfdx auth:sfdxurl:store -f SFDX_QA -s -a production
       

@@ -1,4 +1,5 @@
-name: Push to development branch from feature
+# Unique name for this workflow
+name: Pull request deploy to master branch.
 
 # Definition when the workflow should run
 on:
@@ -14,7 +15,7 @@ jobs:
       with:
         ref: ${{ github.ref }}
         fetch-depth: 0
-      if: github.event.action == 'opened' || github.event.action == 'synchronize' || github.event_name == 'push'
+      if: github.event.action == 'opened' || github.event.action == 'synchronize' || github.event_name == 'pull_request'
     - uses: actions/setup-node@v1
       with:
         node-version: '>=14'
@@ -26,7 +27,7 @@ jobs:
         mkdir sfdx-cli
         tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
         ./sfdx-cli/install
-        
+
     - name: 'Populate auth file with SFDX_URL secret'
       shell: bash
       run: 'echo ${{ secrets.SFDX_URL}} > SFDX_QA'
@@ -34,5 +35,5 @@ jobs:
     - name: 'Authenticate to Production Org'
       run: sfdx auth:sfdxurl:store -f SFDX_QA -s -a production
       
-    - name: 'Run checkonly deploy'
-      run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json 
+    - name: 'Run deploy'
+      run: sfdx force:source:deploy -x manifest/package.xml --testlevel RunLocalTests --json
