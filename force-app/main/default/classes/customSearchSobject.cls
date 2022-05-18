@@ -31,9 +31,6 @@ public with sharing class customSearchSobject {
                 query += ' AND ' + conditions[i];
             }
         }
-
-            return Database.query(query);
-            
-    
+        return Database.query(query);
     }
 }
