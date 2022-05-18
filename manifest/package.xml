@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>53.0</version>
     <types>
         <members>customSearchSobject</members>
+        <members>WebToLeadController</members>
+        <members>WebToLeadControllerTest</members>
         <members>customSearchProductTest</members>
         <name>ApexClass</name>
     </types>
