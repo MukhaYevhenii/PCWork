@@ -16,14 +16,4 @@ public with sharing class customSearchProductTest {
         Product2 productFromDatabse = productListFromDatabase.get(0);
         System.assertEquals(product.Id,productFromDatabse.Id);
     }
-
-
-    @IsTest
-    public static void shouldReturnProductFromDatabaseWithConditions2() {
-        Product2 product = [SELECT Id, Name, Model__c, Producer__c, ProductCode, Available__c, Family FROM Product2 WHERE ProductCode='G88E'];
-        List<Product2> productListFromDatabase = customSearchSobject.getProducts('GPU AMD','i5-4334','G82E','AMD','GPU');
-        Product2 productFromDatabse = productListFromDatabase.get(0);
-        System.assertEquals(product.Id,productFromDatabse.Id);
-    }
-
 }
