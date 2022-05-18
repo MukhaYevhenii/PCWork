@@ -1,0 +1,50 @@
+<template>
+
+   <div class="spinner">
+      <template if:true={isLoading}>
+           <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+           </lightning-spinner>
+      </template>
+  </div>
+
+    <lightning-card title="Search" icon-name="standard:product">
+        <div style="display:flex; justify-content: center; min-width: 100%">
+            <div style="min-width: 50%;">
+               <c-product-name-input ongetproductname={handleNameChange} ></c-product-name-input>
+            </div>
+        </div>
+ 
+        <div style="display:flex; justify-content: space-around; min-width: 100%">
+           <div style="min-width: 15%;">
+            <c-product-code-input ongetproductcodevalue={handlegetProductCodeValue}></c-product-code-input>
+           </div>
+           <div style="min-width: 15%;">
+            <c-product-model-input ongetmodelvalue={handleModelChange}></c-product-model-input>
+            </div>
+           <div style="min-width: 15%;">
+            <c-product-producer-picklist ongetproducervalue={handleProducerChange} ></c-product-producer-picklist>
+            </div>
+           <div style="min-width: 15%;">
+            <c-product-family-picklist ongetfamilyvalue={handleGetFamilyValue}></c-product-family-picklist>
+            </div>
+        </div>
+
+        <div style="width: 100%; display: flex; justify-content: center;">
+           <div>
+               <lightning-button label="Search" variant="brand" onclick={handleSearchKeyword} ></lightning-button>
+           </div>
+            <div style="margin-left: 1%">
+               <lightning-button style="margin-top:10px;" label="Clear" variant="brand" onclick={handleClearKeyword}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+
+    <lightning-card style="margin-top: 2%;">
+      <div style="margin-top:10px; margin-left:10px; margin-right:10px;">
+         <lightning-datatable hide-checkbox-column="true" key-field="Id" columns={columns}></lightning-datatable>
+         <div class="slds-scrollable_y" style="height: 48vh;">
+            <lightning-datatable hide-table-header="true" hide-checkbox-column="true" onrowaction={navigateToProductPage} key-field="Id" data={productList} columns={columns}></lightning-datatable>
+         </div>
+       </div>
+    </lightning-card>
+</template>
