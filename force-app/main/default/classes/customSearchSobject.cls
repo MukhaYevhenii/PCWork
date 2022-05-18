@@ -1,9 +1,4 @@
 public with sharing class customSearchSobject {
-
-    public customSearchSobject() {
-      
-    }
-
     @AuraEnabled(cacheable = true)
     public static List<Product2> getProducts(String productName, String model, String productCode, String producer, String family){
         List<String> conditions = new List<String>();
