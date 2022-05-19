@@ -38,13 +38,14 @@
             </div>
         </div>
     </lightning-card>
-
-    <lightning-card style="margin-top: 2%;">
-      <div style="margin-top:10px; margin-left:10px; margin-right:10px;">
-         <lightning-datatable hide-checkbox-column="true" key-field="Id" columns={columns}></lightning-datatable>
-         <div class="slds-scrollable_y" style="height: 48vh;">
-            <lightning-datatable hide-table-header="true" hide-checkbox-column="true" onrowaction={navigateToProductPage} key-field="Id" data={productList} columns={columns}></lightning-datatable>
-         </div>
-       </div>
-    </lightning-card>
+    <div if:true={isNotEmpty}>
+      <lightning-card style="margin-top: 2%;">
+         <div style="margin-top:10px; margin-left:10px; margin-right:10px;">
+            <lightning-datatable hide-checkbox-column="true" key-field="Id" columns={columns}></lightning-datatable>
+            <div class="slds-scrollable_y" style="height: 48vh;">
+               <lightning-datatable hide-table-header="true" hide-checkbox-column="true" onrowaction={navigateToProductPage} key-field="Id" data={productList} columns={columns}></lightning-datatable>
+            </div>
+          </div>
+       </lightning-card>
+    </div>
 </template>
