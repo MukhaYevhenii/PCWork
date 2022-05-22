@@ -1,7 +1,7 @@
 public with sharing class fileController {
     @AuraEnabled(cacheable=true)
     public static List<ContentVersion> getVersionFiles(String recordId){
-        try {
+       
             return [
 		SELECT
 		Id,
@@ -18,10 +18,7 @@ public with sharing class fileController {
 		WHERE FirstPublishLocationId =:recordId
 			ORDER BY CreatedDate DESC
 		];
-        
-        } catch (Exception e) {
-            throw new AuraHandledException(e.getMessage());
-        }
+
     }
 
     @AuraEnabled
