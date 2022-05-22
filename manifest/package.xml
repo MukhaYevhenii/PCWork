@@ -4,12 +4,6 @@
     <types>
         <members>fileController</members>
         <members>fileControllerTest</members>
-        <members>customSearchSobject</members>
-        <members>WebToLeadController</members>
-        <members>WebToLeadControllerTest</members>
-        <members>customSearchProductTest</members>
-        <members>filePreviewAndDownloadController</members>
-        <members>filePreviewAndDownloadControllerTest</members>
         <name>ApexClass</name>
     </types>
      <types>
