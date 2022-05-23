@@ -3,9 +3,12 @@
     <version>53.0</version>
     <types>
         <members>customSearchSobject</members>
+        <members>customSearchSobjectTest</members>
         <members>WebToLeadController</members>
         <members>WebToLeadControllerTest</members>
         <members>customSearchProductTest</members>
+        <members>editRecordController</members>
+        <members>editRecordControllerTest</members>
         <name>ApexClass</name>
     </types>
      <types>
