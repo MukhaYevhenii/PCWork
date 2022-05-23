@@ -5,11 +5,12 @@
         <members>fileController</members>
         <members>fileControllerTest</members>
         <members>customSearchSobject</members>
+        <members>customSearchSobjectTest</members>
         <members>WebToLeadController</members>
         <members>WebToLeadControllerTest</members>
         <members>customSearchProductTest</members>
-        <members>filePreviewAndDownloadController</members>
-        <members>filePreviewAndDownloadControllerTest</members>
+        <members>editRecordController</members>
+        <members>editRecordControllerTest</members>
         <name>ApexClass</name>
     </types>
      <types>
