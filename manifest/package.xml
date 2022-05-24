@@ -5,7 +5,7 @@
         <members>customSearchSobject</members>
         <members>WebToLeadController</members>
         <members>WebToLeadControllerTest</members>
-        <members>customSearchProductTest</members>
+        <members>customSearchProductTest</members> 
         <name>ApexClass</name>
     </types>
      <types>
