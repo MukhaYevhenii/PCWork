@@ -17,7 +17,6 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
     @track productPrice;
     @track pricebookentry;
     @track isModalOpen = true;
-    // @track Id = '01t7Q000000oQVfQAM';
     @api Id;
     @track filesList = [];
     wiredActivities;
@@ -48,7 +47,6 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         if(data){
             this.filesList = Object.keys(data).map(item=>({"label":data[item].Title,
              "value": data[item].ContentDocumentId,
-             "url":`/sfc/servlet.shepherd/document/download/${data[item].ContentDocumentId}`,
              "imageurl":`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`,
              "fileextension": data[item].FileExtension,
              "isProfileImage": this.isProfileImageCheck(`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`)
