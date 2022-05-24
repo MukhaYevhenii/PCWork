@@ -3,10 +3,6 @@ import getProducts from '@salesforce/apex/customSearchSobject.getProducts';
 import {ShowToastEvent} from 'lightning/platformShowToastEvent';
 import { NavigationMixin } from 'lightning/navigation';
 
-const actions = [
-    {label: 'Show details', name:'show_details'}
-];
-
 const cols = [
     { label:'Product name', fieldName:'Url', type: 'url',  typeAttributes: {label: { fieldName: 'UrlName' }, 
     target: '_blank'}},
