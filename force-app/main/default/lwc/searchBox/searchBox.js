@@ -8,15 +8,14 @@ const actions = [
 ];
 
 const cols = [
-    { type: 'action', typeAttributes: { rowActions: actions} },
-    { label:'Product name', fieldName:'Name', type: 'text'},
+    { label:'Product name', fieldName:'Url', type: 'url',  typeAttributes: {label: { fieldName: 'UrlName' }, 
+    target: '_blank'}},
     { label:'Producer', fieldName:'Producer__c', type: 'text'},
     { label:'Model', fieldName:'Model__c', type: 'text'},
     { label:'Product Family', fieldName:'Family', type: 'text'},
     { label:'Product Code', fieldName:'ProductCode', type: 'text'},
     { label:'Available', fieldName:'Available__c', type: 'boolean'},
 ];
-
 
 export default class SearchBox extends NavigationMixin(LightningElement) {
     @track productName;
@@ -52,14 +51,6 @@ export default class SearchBox extends NavigationMixin(LightningElement) {
         this.productName = event.detail;
     }
 
-    retrieveProducts ({error, data}){
-        if(data){
-            this.productList = data;
-        }else if(error){
-
-        }
-    }
-
     handleSearchKeyword(){
         this.isLoading = true;
         if (this.productName !== '' || this.model !== '' || this.productCode !== '' || this.producerValue !== '' || this.productFamily !== '') {
@@ -71,7 +62,14 @@ export default class SearchBox extends NavigationMixin(LightningElement) {
                 family: this.productFamily
                 })
                 .then(result => {
-                    this.productList = result;
+                    this.productList = [];
+                    result.forEach(r=> {
+                        let record =  Object.assign({}, r);
+                        record.Url = `/lightning/r/Product2/${r.Id}/view`;
+                        record.UrlName = r.Name;
+                        record.Name = r.Name;
+                        this.productList.push(record);
+                    });
                     if(this.productList.length === 0) {
                         this.isNotEmpty = false;
                         this.isLoading = false;
@@ -103,18 +101,6 @@ export default class SearchBox extends NavigationMixin(LightningElement) {
             this.dispatchEvent(event);   
             this.isLoading = false;
         }
-    }
-
-    navigateToProductPage(event) {
-        const row = event.detail.row;
-        this[NavigationMixin.Navigate]({
-            type: 'standard__recordPage',
-            attributes: {
-                recordId: row.Id,
-                objectApiName: 'Product2',
-                actionName: 'view'
-            }
-        });
     }
 
     handleClearKeyword(){
