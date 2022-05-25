@@ -19,7 +19,6 @@ public with sharing class customSearchSobject {
             conditions.add('Family LIKE ' + '\'' + String.escapeSingleQuotes(family) + '%\'');
         }
 
-
         if (conditions.size() > 0) {
             query += 'WHERE ' + conditions[0];
             for (Integer i = 1; i < conditions.size(); i++) {

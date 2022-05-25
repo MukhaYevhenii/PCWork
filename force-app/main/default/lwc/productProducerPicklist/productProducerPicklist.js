@@ -4,7 +4,6 @@ import Producer from '@salesforce/schema/Product2.Producer__c';
 import { getObjectInfo } from 'lightning/uiObjectInfoApi';
 import Product2_object from '@salesforce/schema/Product2';
 
-
 export default class ProductProducerPicklist extends LightningElement {
     producerValue='';
     @wire(getObjectInfo, { objectApiName: Product2_object })

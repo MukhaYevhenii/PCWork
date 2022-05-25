@@ -17,7 +17,6 @@ const cols = [
     { label:'Available', fieldName:'Available__c', type: 'boolean'},
 ];
 
-
 export default class SearchBox extends NavigationMixin(LightningElement) {
     @track productName;
     @track model;

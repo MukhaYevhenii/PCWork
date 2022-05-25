@@ -11,7 +11,6 @@ import DISPLAYURL_FIELD from '@salesforce/schema/Product2.DisplayUrl';
 
 const fields = [DISPLAYURL_FIELD];
 
-
 export default class FilePreviewAndDownloads extends NavigationMixin(LightningElement) {
 
     @api recordId;
@@ -219,5 +218,4 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
             }
         });
     }
-
 }
