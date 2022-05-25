@@ -1,7 +1,12 @@
 ({
-    init: function(cmp, evt, helper) {
-        var myPageRef = cmp.get("v.pageReference");
-        var firstname = myPageRef.state.RecordId;
-        cmp.set("v.firstname", firstname);
-    }
+   
+      closeQA  : function(component, event, helper) {
+        let workspaceAPI = component.find("workspace");
+        workspaceAPI.getFocusedTabInfo().then(function(response) {
+            let focusedTabId = response.tabId;
+            workspaceAPI.closeTab({tabId: focusedTabId});
+        })
+        .catch(function(error) {
+        });
+	}
 })

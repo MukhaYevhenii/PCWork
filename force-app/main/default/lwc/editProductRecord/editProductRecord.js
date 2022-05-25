@@ -207,6 +207,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
             );
         });
         refreshApex(this.wiredActivities);
+        eval("$A.get('e.force:refreshView').fire();"); 
         this[NavigationMixin.Navigate]({
             type: 'standard__recordPage',
             attributes: {
@@ -215,7 +216,10 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
                 actionName: 'view'
             },
         });
-        eval("$A.get('e.force:refreshView').fire();");
+        setTimeout(()=>{
+            eval("$A.get('e.force:refreshView').fire();"); 
+            this.closeQuickAction();
+        },1000);
     }
 
 }
