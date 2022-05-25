@@ -13,13 +13,9 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Product2</tabs>
     <tabs>Search_Product</tabs>
-    <tabs>Add_images</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>PCWork_UtilityBar</utilityBar>
     <workspaceConfig>
-        <mappings>
-            <tab>Add_images</tab>
-        </mappings>
         <mappings>
             <tab>Search_Product</tab>
         </mappings>
