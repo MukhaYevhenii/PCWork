@@ -57,4 +57,4 @@ export default class CreateProductRecord extends LightningElement {
 
         this.isModalImageOpen = true;
     }
-} 
+}

@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Add_Review</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Review</shortDescription>
+        <value>Add Review</value>
+    </labels>
+    <labels>
+        <fullName>All_records_found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>All records found</shortDescription>
+        <value>All records found</value>
+    </labels>
+    <labels>
+        <fullName>City</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>City_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>City button</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>Clear_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Clear button</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>Contract_doctor_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract doctor error</shortDescription>
+        <value>This doctor already had a contract with this hospital</value>
+    </labels>
+    <labels>
+        <fullName>Country</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Countryy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Countryy</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Csv_warning</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Csv warning</shortDescription>
+        <value>Please upload a valid CSV document</value>
+    </labels>
+    <labels>
+        <fullName>Deselect_all_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Deselect all button</shortDescription>
+        <value>Deselect all</value>
+    </labels>
+    <labels>
+        <fullName>Details</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>First_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>First_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First button</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>Full_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Full Address</shortDescription>
+        <value>Full Address</value>
+    </labels>
+    <labels>
+        <fullName>Full_Details</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Full Details</shortDescription>
+        <value>Full Details</value>
+    </labels>
+    <labels>
+        <fullName>Full_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Full Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>HP_Active</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Active</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>HP_All_records_found</fullName>
+        <categories>HP</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>All records found</shortDescription>
+        <value>All records found</value>
+    </labels>
+    <labels>
+        <fullName>HP_City</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>HP_Clear_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Clear_button</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>HP_Contract_doctor_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Contract_doctor_error</shortDescription>
+        <value>This doctor already had a contact with this hospital</value>
+    </labels>
+    <labels>
+        <fullName>HP_Country</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>HP_Create_Doctor</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Create_Doctor</shortDescription>
+        <value>Success! Doctor was added.</value>
+    </labels>
+    <labels>
+        <fullName>HP_Csv_warning</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Csv_warning</shortDescription>
+        <value>Please upload a valid CSV document</value>
+    </labels>
+    <labels>
+        <fullName>HP_Current_user</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Current_user</shortDescription>
+        <value>Current user</value>
+    </labels>
+    <labels>
+        <fullName>HP_Deselect_all_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Deselect_all_button</shortDescription>
+        <value>Deselect all</value>
+    </labels>
+    <labels>
+        <fullName>HP_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>HP_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Error</shortDescription>
+        <value>Error!</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_City_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_City_toast</shortDescription>
+        <value>City field contains characters that are not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_Country_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_Country_toast</shortDescription>
+        <value>Country field contains characters that are not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_FieldRequired_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_FieldRequired_toast</shortDescription>
+        <value>Please fill in the required field!</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_Nationality_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_Nationality_toast</shortDescription>
+        <value>Nationality field contains characters that are not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_Phone_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_Phone_toast</shortDescription>
+        <value>Phone number can only contain numbers.</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_Postal_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_Postal_toast</shortDescription>
+        <value>Postal code field contains characters that are not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_Speciality_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_Speciality_toast</shortDescription>
+        <value>Speciality field contains characters that are not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_Street_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_Street_toast</shortDescription>
+        <value>Street field contains characters that are not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>HP_ExternalDoctor_Success_toast</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_ExternalDoctor_Success_toast</shortDescription>
+        <value>Successful</value>
+    </labels>
+    <labels>
+        <fullName>HP_First_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_First_Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>HP_First_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_First_button</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>HP_Free_Licenses</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Free_Licenses</shortDescription>
+        <value>Free licenses</value>
+    </labels>
+    <labels>
+        <fullName>HP_Full_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Full_Address</shortDescription>
+        <value>Full Address</value>
+    </labels>
+    <labels>
+        <fullName>HP_Full_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Full_Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>HP_Hosp_add</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Hosp_add</shortDescription>
+        <value>Success! Hospital was added.</value>
+    </labels>
+    <labels>
+        <fullName>HP_Import_data</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Import_data</shortDescription>
+        <value>Import data</value>
+    </labels>
+    <labels>
+        <fullName>HP_Import_doctors</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Import_doctors</shortDescription>
+        <value>Import doctors</value>
+    </labels>
+    <labels>
+        <fullName>HP_Inactive</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Inactive</shortDescription>
+        <value>Inactive</value>
+    </labels>
+    <labels>
+        <fullName>HP_Invert_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Invert_button</shortDescription>
+        <value>Invert</value>
+    </labels>
+    <labels>
+        <fullName>HP_Last_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Last_button</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>HP_Last_login</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Last_login</shortDescription>
+        <value>Last login</value>
+    </labels>
+    <labels>
+        <fullName>HP_Last_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Last_name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>HP_License</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_License</shortDescription>
+        <value>License</value>
+    </labels>
+    <labels>
+        <fullName>HP_License_Number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_License_Number</shortDescription>
+        <value>License Number</value>
+    </labels>
+    <labels>
+        <fullName>HP_Nationality</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Nationality</shortDescription>
+        <value>Nationality</value>
+    </labels>
+    <labels>
+        <fullName>HP_Next_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Next_button</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>HP_Not_selected_for_import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Not_selected_for_import</shortDescription>
+        <value>Not selected for import</value>
+    </labels>
+    <labels>
+        <fullName>HP_Previous_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Previous_button</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>HP_Read_file</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Read_file</shortDescription>
+        <value>Read file</value>
+    </labels>
+    <labels>
+        <fullName>HP_Records</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Records</shortDescription>
+        <value>Records</value>
+    </labels>
+    <labels>
+        <fullName>HP_Records_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Records_error</shortDescription>
+        <value>Records were not found</value>
+    </labels>
+    <labels>
+        <fullName>HP_Records_of</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Records_of</shortDescription>
+        <value>Records of</value>
+    </labels>
+    <labels>
+        <fullName>HP_SOAP_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_SOAP_Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>HP_Search_Doctors</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Search_Doctors</shortDescription>
+        <value>Search Doctors</value>
+    </labels>
+    <labels>
+        <fullName>HP_Search_Result</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Search_Result</shortDescription>
+        <value>Search Result</value>
+    </labels>
+    <labels>
+        <fullName>HP_Search_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Search_button</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>HP_Select_all_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Select_all_button</shortDescription>
+        <value>Select all</value>
+    </labels>
+    <labels>
+        <fullName>HP_Speciality</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP Speciality</shortDescription>
+        <value>Speciality</value>
+    </labels>
+    <labels>
+        <fullName>HP_Status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>HP_Street</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Street</shortDescription>
+        <value>Street</value>
+    </labels>
+    <labels>
+        <fullName>HP_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>HP_Total_Licenses</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Total_Licenses</shortDescription>
+        <value>Total licenses</value>
+    </labels>
+    <labels>
+        <fullName>HP_Update_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Update button</shortDescription>
+        <value>Update records</value>
+    </labels>
+    <labels>
+        <fullName>HP_Used_Licenses</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Used_Licenses</shortDescription>
+        <value>Used licenses</value>
+    </labels>
+    <labels>
+        <fullName>HP_Username</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Username</shortDescription>
+        <value>Username</value>
+    </labels>
+    <labels>
+        <fullName>HP_Users</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>HP_View</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_View</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>HP_action</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP action</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>HP_add_doc_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP add doc button</shortDescription>
+        <value>Add doctor</value>
+    </labels>
+    <labels>
+        <fullName>HP_add_doctor</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP add doctor</shortDescription>
+        <value>Add new doctor</value>
+    </labels>
+    <labels>
+        <fullName>HP_address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP address</shortDescription>
+        <value>Address</value>
+    </labels>
+    <labels>
+        <fullName>HP_ambulances</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP ambulances</shortDescription>
+        <value>No. Ambulances</value>
+    </labels>
+    <labels>
+        <fullName>HP_cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>HP_con_detail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP con detail</shortDescription>
+        <value>Contact details</value>
+    </labels>
+    <labels>
+        <fullName>HP_count_page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_count_page</shortDescription>
+        <value>Count page</value>
+    </labels>
+    <labels>
+        <fullName>HP_count_trigger</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_count_trigger</shortDescription>
+        <value>Count trigger</value>
+    </labels>
+    <labels>
+        <fullName>HP_deactive</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_deactive</shortDescription>
+        <value>Deactivated</value>
+    </labels>
+    <labels>
+        <fullName>HP_del</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_del</shortDescription>
+        <value>Del</value>
+    </labels>
+    <labels>
+        <fullName>HP_doctor_add_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP doctor add error</shortDescription>
+        <value>Error! You must complete all required fields.</value>
+    </labels>
+    <labels>
+        <fullName>HP_edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>HP_fax</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP fax</shortDescription>
+        <value>Fax number</value>
+    </labels>
+    <labels>
+        <fullName>HP_general</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_general</shortDescription>
+        <value>General</value>
+    </labels>
+    <labels>
+        <fullName>HP_hosp_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_hosp_name</shortDescription>
+        <value>Hospital name</value>
+    </labels>
+    <labels>
+        <fullName>HP_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>HP_on_page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_on_page</shortDescription>
+        <value>on page</value>
+    </labels>
+    <labels>
+        <fullName>HP_page_trigger</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_page_trigger</shortDescription>
+        <value>Pages/Triggers</value>
+    </labels>
+    <labels>
+        <fullName>HP_phone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>HP_postal_code</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP postal code</shortDescription>
+        <value>Postal code</value>
+    </labels>
+    <labels>
+        <fullName>HP_record_not_found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP record not found</shortDescription>
+        <value>Records were not found.</value>
+    </labels>
+    <labels>
+        <fullName>HP_save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>HP_timezone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_timezone</shortDescription>
+        <value>Timezone</value>
+    </labels>
+    <labels>
+        <fullName>HP_user_activated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_user_activated</shortDescription>
+        <value>User activated</value>
+    </labels>
+    <labels>
+        <fullName>HP_user_deactivated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_user_deactivated</shortDescription>
+        <value>User deactivated</value>
+    </labels>
+    <labels>
+        <fullName>HP_user_id</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_user_id</shortDescription>
+        <value>User id</value>
+    </labels>
+    <labels>
+        <fullName>HP_user_ip</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_user_ip</shortDescription>
+        <value>User source ip</value>
+    </labels>
+    <labels>
+        <fullName>HP_user_not_activated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_user_not_activated</shortDescription>
+        <value>User was not activated</value>
+    </labels>
+    <labels>
+        <fullName>HP_user_not_deactivated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HP_user_not_deactivated</shortDescription>
+        <value>User was not deactivated</value>
+    </labels>
+    <labels>
+        <fullName>Hp_City_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hp_City_button</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>Import_data</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import data</shortDescription>
+        <value>Import data</value>
+    </labels>
+    <labels>
+        <fullName>Import_doctors</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import doctors</shortDescription>
+        <value>Import doctors</value>
+    </labels>
+    <labels>
+        <fullName>Invert_buttont</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invert buttont</shortDescription>
+        <value>Invert</value>
+    </labels>
+    <labels>
+        <fullName>Last_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>Last_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last button</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>License_Number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>License Number</shortDescription>
+        <value>License Number</value>
+    </labels>
+    <labels>
+        <fullName>MS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>MS_Available_Column</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Available_Column</shortDescription>
+        <value>Available</value>
+    </labels>
+    <labels>
+        <fullName>MS_Cancel_Button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Cancel_Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>MS_Clear</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Clear</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>MS_Close_Butt</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Close_Butt</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>MS_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Delete_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Delete_File</shortDescription>
+        <value>Error deleting file</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Load_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Load_File</shortDescription>
+        <value>Error loading Files</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Load_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Load_Price</shortDescription>
+        <value>Error loading the price of this record</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Selecting_Prof</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Selecting_Prof</shortDescription>
+        <value>Error in selecting profile image</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Update_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Update_Price</shortDescription>
+        <value>Error updating product price!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Family_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Family_Placeholder</shortDescription>
+        <value>Family</value>
+    </labels>
+    <labels>
+        <fullName>MS_Fields_Empty</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Fields_Empty</shortDescription>
+        <value>All of the search fields are empty.</value>
+    </labels>
+    <labels>
+        <fullName>MS_File_Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_File_Preview</shortDescription>
+        <value>File preview</value>
+    </labels>
+    <labels>
+        <fullName>MS_File_Upload_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_File_Upload_Success</shortDescription>
+        <value>Files Uploaded Successfully.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Model_Column</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Model_Column</shortDescription>
+        <value>Model</value>
+    </labels>
+    <labels>
+        <fullName>MS_Model_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Model_Placeholder</shortDescription>
+        <value>Model</value>
+    </labels>
+    <labels>
+        <fullName>MS_Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Preview</shortDescription>
+        <value>Preview</value>
+    </labels>
+    <labels>
+        <fullName>MS_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Price</shortDescription>
+        <value>Price (EUR)</value>
+    </labels>
+    <labels>
+        <fullName>MS_Price_Greater</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Price_Greater</shortDescription>
+        <value>Price must be greater than 0.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Producer_Column</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Producer_Column</shortDescription>
+        <value>Producer</value>
+    </labels>
+    <labels>
+        <fullName>MS_Producer_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Producer_Placeholder</shortDescription>
+        <value>Producer</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Code_Column</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Code_Column</shortDescription>
+        <value>Product Code</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Code_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Code_Placeholder</shortDescription>
+        <value>Product code</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Create_ID</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Create_ID</shortDescription>
+        <value>Product created :</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Created_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Created_Success</shortDescription>
+        <value>Product has been created successfully!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Family_Column</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Family_Column</shortDescription>
+        <value>Product Family</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Name_Column</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Name_Column</shortDescription>
+        <value>Product name</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Update</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Update</shortDescription>
+        <value>Product updated.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Updated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Updated</shortDescription>
+        <value>Product has been updated successfully!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Record_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Record_Not_Found</shortDescription>
+        <value>Records were not found.</value>
+    </labels>
+    <labels>
+        <fullName>MS_SaveNew</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_SaveNew</shortDescription>
+        <value>Save &amp; New</value>
+    </labels>
+    <labels>
+        <fullName>MS_SaveNext</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_SaveNext</shortDescription>
+        <value>Save &amp; Next</value>
+    </labels>
+    <labels>
+        <fullName>MS_Save_Butt</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Save_Butt</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>MS_Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>MS_Search_Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Search_Product</shortDescription>
+        <value>Search product by Name</value>
+    </labels>
+    <labels>
+        <fullName>MS_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>MS_Upload_Product_Images</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Upload_Product_Images</shortDescription>
+        <value>Upload product images</value>
+    </labels>
+    <labels>
+        <fullName>MS_Upload_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Upload_Success</shortDescription>
+        <value>Files Uploaded Successfully.</value>
+    </labels>
+    <labels>
+        <fullName>Next_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next button</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>Not_selected_for_import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Not selected for import</shortDescription>
+        <value>Not selected for import</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_a_boat</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select a boat</shortDescription>
+        <value>Please select a boat :)</value>
+    </labels>
+    <labels>
+        <fullName>Previous_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous button</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Read_file</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Read file</shortDescription>
+        <value>Read file</value>
+    </labels>
+    <labels>
+        <fullName>Records</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Records</shortDescription>
+        <value>Records</value>
+    </labels>
+    <labels>
+        <fullName>Records_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Records error</shortDescription>
+        <value>Records were not found</value>
+    </labels>
+    <labels>
+        <fullName>Records_of</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Records of</shortDescription>
+        <value>Records of</value>
+    </labels>
+    <labels>
+        <fullName>Reviews</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reviews</shortDescription>
+        <value>Reviews</value>
+    </labels>
+    <labels>
+        <fullName>Search_Doctors</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Doctors</shortDescription>
+        <value>Search Doctors</value>
+    </labels>
+    <labels>
+        <fullName>Search_Result</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Result</shortDescription>
+        <value>Search Result</value>
+    </labels>
+    <labels>
+        <fullName>Search_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search button</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Select_all_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select all button</shortDescription>
+        <value>Select all</value>
+    </labels>
+    <labels>
+        <fullName>Status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>Street</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Street button</shortDescription>
+        <value>Street</value>
+    </labels>
+    <labels>
+        <fullName>Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>View</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>on_page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>on page</shortDescription>
+        <value>on page</value>
+    </labels>
+</CustomLabels>
