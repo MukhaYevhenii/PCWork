@@ -173,6 +173,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
 
     closeModal() {
         this.isModalOpen = false;
+        
     }
 
     handlePriceChange(event){
@@ -217,9 +218,11 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
             },
         });
         setTimeout(()=>{
+        window.location.reload();
+        }, 1000);
+        setTimeout(()=>{
             eval("$A.get('e.force:refreshView').fire();"); 
             this.closeQuickAction();
         },1000);
     }
-
 }
