@@ -92,7 +92,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
     }
 
     previewImage(event){
-        var url = event.target.dataset.id
+        let url = event.target.dataset.id
         window.open(url, "_blank");
     }
 
@@ -134,10 +134,10 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
 
     handleCheckBoxChange(event){
         if(event.target.checked){
-            var url = event.target.value;
+            let url = event.target.value;
             updateDisplayURL({ recordId: this.Id, url: event.target.value})
             .then(result => {
-                var selected = [...this.template.querySelectorAll('lightning-input')].filter(input => input.value != url);
+                let selected = [...this.template.querySelectorAll('lightning-input')].filter(input => input.value != url);
                 selected.forEach(element => element.checked=false)
                 refreshApex(this.displayurl);
             })
