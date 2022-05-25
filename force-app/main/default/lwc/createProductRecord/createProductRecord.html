@@ -51,7 +51,7 @@
                             data-id
                             type="number"
                             name="price"
-                            label="Price (EUR)"
+                            label={label.MS_Price}
                             formatter="currency"
                             onchange={handlePriceChange}
                             message-when-range-underflow='Price must be greater than 0.'
@@ -64,8 +64,8 @@
                     <lightning-input-field data-id field-name="Description"></lightning-input-field>
                 </div>
                 <footer class="slds-modal__footer">
-                    <lightning-button class="slds-m-top_small" variant="neutral" onclick={closeModal} label="Cancel"></lightning-button>&nbsp;
-                    <lightning-button class="slds-m-top_small" variant="brand" type="submit" label="Save & Next"></lightning-button>
+                    <lightning-button class="slds-m-top_small" variant="neutral" onclick={closeModal} label={label.MS_Cancel_Button}></lightning-button>&nbsp;
+                    <lightning-button class="slds-m-top_small" variant="brand" type="submit" label={label.MS_SaveNext}></lightning-button>
                 </footer>  
             </lightning-record-edit-form>
             </div>

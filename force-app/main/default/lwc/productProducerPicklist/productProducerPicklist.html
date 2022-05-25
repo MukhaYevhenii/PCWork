@@ -1,6 +1,6 @@
 <template>
     <template if:true={leadSourceValues.data}>
-        <lightning-combobox name="progress" placeholder="Producer" value={value}
+        <lightning-combobox name="progress" placeholder={label.MS_Producer_Placeholder} value={value}
             options={leadSourceValues.data.values} onchange={handleChange}>
         </lightning-combobox>
     </template>

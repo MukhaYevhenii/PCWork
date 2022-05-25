@@ -9,9 +9,34 @@ import {NavigationMixin} from 'lightning/navigation';
 import { getRecord, getFieldValue} from 'lightning/uiRecordApi';
 import DISPLAYURL_FIELD from '@salesforce/schema/Product2.DisplayUrl';
 
+import MS_Error_Selecting_Prof from '@salesforce/label/c.MS_Error_Selecting_Prof';
+import MS_Error_Load_File from '@salesforce/label/c.MS_Error_Load_File';
+import MS_Upload_Success from '@salesforce/label/c.MS_Upload_Success';
+import MS_Error_Delete_File from '@salesforce/label/c.MS_Error_Delete_File';
+import MS_Success from '@salesforce/label/c.MS_Success';
+import MS_Error from '@salesforce/label/c.MS_Error';
+import MS_Close_Butt from '@salesforce/label/c.MS_Close_Butt';
+import MS_File_Preview from '@salesforce/label/c.MS_File_Preview';
+import MS_Preview from '@salesforce/label/c.MS_Preview';
+import MS_Delete from '@salesforce/label/c.MS_Delete';
+import MS_Cancel_Button from '@salesforce/label/c.MS_Cancel_Button';
+import MS_SaveNew from '@salesforce/label/c.MS_SaveNew';
+import MS_Save_Butt from '@salesforce/label/c.MS_Save_Butt';
+import MS_Upload_Product_Images from '@salesforce/label/c.MS_Upload_Product_Images';
+
 const fields = [DISPLAYURL_FIELD];
 
 export default class FilePreviewAndDownloads extends NavigationMixin(LightningElement) {
+    label = {
+        MS_Upload_Product_Images,
+        MS_Close_Butt,
+        MS_File_Preview,
+        MS_Preview,
+        MS_Delete,
+        MS_Cancel_Button,
+        MS_SaveNew,
+        MS_Save_Butt
+    }
     @api recordId;
     @track isModalOpen = true;
     @track filesList = [];
@@ -32,7 +57,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
         if(error){ 
             this.dispatchEvent(
                 new ShowToastEvent({
-                    title: 'Error loading record files',
+                    title: MS_Error_Load_File,
                     message: error.body.message,
                     variant: 'error',
                 }),
@@ -67,7 +92,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
             .catch(error => {
                 this.dispatchEvent(
                     new ShowToastEvent({
-                        title: 'Error in selecting profile image',
+                        title: MS_Error_Selecting_Prof,
                         message: error.body.message,
                         variant: 'error'
                     })
@@ -81,7 +106,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
             .catch(error => {
                 this.dispatchEvent(
                     new ShowToastEvent({
-                        title: 'Error',
+                        title: MS_Error,
                         message: error.body.message,
                         variant: 'error'
                     })
@@ -119,7 +144,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
                 .catch(error => {
                     this.dispatchEvent(
                         new ShowToastEvent({
-                            title: 'Error',
+                            title: MS_Error,
                             message: error.body.message,
                             variant: 'error'
                         })
@@ -130,7 +155,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
         .catch(error => {
             this.dispatchEvent(
                 new ShowToastEvent({
-                    title: 'Error deleting file',
+                    title: MS_Error_Delete_File,
                     message: error.body.message,
                     variant: 'error'
                 })
@@ -151,8 +176,8 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
         refreshApex(this.wiredActivities);
         this.dispatchEvent(
           new ShowToastEvent({
-            title: "Success!",
-            message: uploadedFiles.length + " Files Uploaded Successfully.",
+            title: MS_Success,
+            message: uploadedFiles.length + " " + MS_Upload_Success,
             variant: "success"
           })
         );
@@ -189,7 +214,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
             .catch(error => {
                 this.dispatchEvent(
                     new ShowToastEvent({
-                        title: 'Error',
+                        title: MS_Error,
                         message: error.body.message,
                         variant: 'error'
                     })
@@ -199,7 +224,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
         .catch(error => {
             this.dispatchEvent(
                 new ShowToastEvent({
-                    title: 'Error',
+                    title: MS_Error,
                     message: error.body.message,
                     variant: 'error'
                 })

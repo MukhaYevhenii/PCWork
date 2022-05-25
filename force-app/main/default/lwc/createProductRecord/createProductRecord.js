@@ -2,7 +2,20 @@ import { LightningElement, track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { createRecord } from 'lightning/uiRecordApi';
 
+import MS_Product_Created_Success from '@salesforce/label/c.MS_Product_Created_Success';
+import MS_Product_Create_ID from '@salesforce/label/c.MS_Product_Create_ID';
+import MS_Cancel_Button from '@salesforce/label/c.MS_Cancel_Button';
+import MS_SaveNext from '@salesforce/label/c.MS_SaveNext';
+import MS_Price from '@salesforce/label/c.MS_Price';
+
+
+
 export default class CreateProductRecord extends LightningElement {
+    label = {
+        MS_Cancel_Button,
+        MS_SaveNext,
+        MS_Price
+    }
     @track productPrice;
     @track isModalImageOpen = false;
     @track isModalOpen = true;
@@ -29,8 +42,8 @@ export default class CreateProductRecord extends LightningElement {
     handleSuccess(event){
         const recordId = event.detail.id;
         const toastEvent = new ShowToastEvent ({
-            title:"Product has been created successfully!",
-            message: "Product created : " + recordId,
+            title: MS_Product_Created_Success,
+            message: MS_Product_Create_ID + recordId,
             variant: "success"
         });
         this.dispatchEvent(toastEvent);
@@ -40,9 +53,8 @@ export default class CreateProductRecord extends LightningElement {
         let objRecordInput = {'apiName' : 'PricebookEntry', fields};
         createRecord(objRecordInput).then(response => {
         }).catch(error => {
-            alert('Error: ' +JSON.stringify(error));
         });
 
         this.isModalImageOpen = true;
     }
-}
+} 

@@ -7,7 +7,7 @@
       </template>
   </div>
 
-    <lightning-card title="Search" icon-name="standard:product">
+    <lightning-card title={label.MS_Search} icon-name="standard:product">
         <div style="display:flex; justify-content: center; min-width: 100%">
             <div style="min-width: 50%;">
                <c-product-name-input ongetproductname={handleNameChange} ></c-product-name-input>
@@ -31,10 +31,10 @@
 
         <div style="width: 100%; display: flex; justify-content: center;">
            <div>
-               <lightning-button label="Search" variant="brand" onclick={handleSearchKeyword} ></lightning-button>
+               <lightning-button label={label.MS_Search} variant="brand" onclick={handleSearchKeyword} ></lightning-button>
            </div>
             <div style="margin-left: 1%">
-               <lightning-button style="margin-top:10px;" label="Clear" variant="brand" onclick={handleClearKeyword}></lightning-button>
+               <lightning-button style="margin-top:10px;" label={label.MS_Clear} variant="brand" onclick={handleClearKeyword}></lightning-button>
             </div>
         </div>
     </lightning-card>

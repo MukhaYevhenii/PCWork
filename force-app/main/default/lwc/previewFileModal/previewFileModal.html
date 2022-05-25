@@ -12,13 +12,12 @@
             <header class="slds-modal__header">
                 <lightning-button-icon
                 class="slds-modal__close"
-                title="Close"
                 icon-name="utility:close"
                 icon-class="slds-button_icon-inverse"
                 onclick={closeModal}
                 ></lightning-button-icon>
                 <h2 id="id-of-modalheader-h2" class="slds-text-heading_large">
-                    File preview
+                    {label.MS_File_Preview}
                 </h2>
             </header>
             <div class="slds-modal__content" id="modal-content-id-1">
@@ -42,9 +41,9 @@
             <footer class="slds-modal__footer slds-grid slds-grid_alighn_spread">
                 <lightning-button
                 variant="brand-outline"
-                label="Cancel"
+                label={label.MS_Cancel_Button}
                 onclick={closeModal}
-                title="Cancel"
+                title={label.MS_Cancel_Button}
                 class="slds-var-m-left_x-small"></lightning-button>
             </footer>
         </div>

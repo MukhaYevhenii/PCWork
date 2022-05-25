@@ -4,7 +4,10 @@ import FamilyProduct from '@salesforce/schema/Product2.Family';
 import { getObjectInfo } from 'lightning/uiObjectInfoApi';
 import PRODUCT_OBJECT from '@salesforce/schema/Product2';
 
+import MS_Family_Placeholder from '@salesforce/label/c.MS_Family_Placeholder';
+
 export default class ProductFamilyPicklist extends LightningElement {
+    label = {MS_Family_Placeholder}
     productFamily;
 
     @wire(getObjectInfo, { objectApiName: PRODUCT_OBJECT })

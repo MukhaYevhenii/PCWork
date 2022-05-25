@@ -56,10 +56,10 @@
                             data-id
                             type="number"
                             name="price"
-                            label="Price (EUR)"
+                            label={label.MS_Price}
                             formatter="currency"
                             onchange={handlePriceChange}
-                            message-when-range-underflow='Price must be greater than 0.'
+                            message-when-range-underflow={label.MS_Price_Greater}
                             min=".01"
                             step=".01"
                             value={productPrice}
@@ -75,7 +75,7 @@
                     onuploadfinished={handleUploadFinished}
                     multiple></lightning-file-upload>
             
-                <lightning-card title="File Preview">
+                <lightning-card title={label.MS_File_Preview}>
                      <template for:each={filesList} for:item="file">
                          <div key={file.value} class="slds-box">
                              <div class="slds-grid slds-wrap">
@@ -87,13 +87,13 @@
                                      &nbsp;&nbsp;&nbsp;
                                  </div>
                                  <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_12-of-12">
-                                    <lightning-button label="Preview" 
+                                    <lightning-button label={label.MS_Preview} 
                                     variant="brand"
                                     data-id={file.imageurl}
                                     onclick={previewImage}
                                     style="margin-left:20px; margin-right: 6px; margin-top:5px;"></lightning-button>
                                     &nbsp;&nbsp;&nbsp;
-                                   <lightning-button label="Delete" 
+                                   <lightning-button label={label.MS_Delete}
                                     style="margin-top:5px;"
                                     variant="destructive"
                                     data-id={file.value}
@@ -109,8 +109,8 @@
                 </div>
                 </div>
                 <footer class="slds-modal__footer">
-                    <lightning-button class="slds-m-top_small" variant="neutral" onclick={closeModal} label="Cancel"></lightning-button>&nbsp;
-                    <lightning-button class="slds-m-top_small" variant="brand" type="submit" label="Save"></lightning-button>
+                    <lightning-button class="slds-m-top_small" variant="neutral" onclick={closeModal} label={label.MS_Cancel_Button}></lightning-button>&nbsp;
+                    <lightning-button class="slds-m-top_small" variant="brand" type="submit" label={label.MS_Save_Butt}></lightning-button>
                 </footer>  
             </lightning-record-edit-form>
             </div>

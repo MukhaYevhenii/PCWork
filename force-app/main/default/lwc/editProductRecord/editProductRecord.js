@@ -10,10 +10,36 @@ import { getRecord, getFieldValue} from 'lightning/uiRecordApi';
 import {NavigationMixin} from 'lightning/navigation';
 import DISPLAYURL_FIELD from '@salesforce/schema/Product2.DisplayUrl';
 
+import MS_Price from '@salesforce/label/c.MS_Price';
+import MS_Save_Butt from '@salesforce/label/c.MS_Save_Butt';
+import MS_Cancel_Button from '@salesforce/label/c.MS_Cancel_Button';
+import MS_Delete from '@salesforce/label/c.MS_Delete';
+import MS_Preview from '@salesforce/label/c.MS_Preview';
+import MS_File_Preview from '@salesforce/label/c.MS_File_Preview';
+import MS_Price_Greater from '@salesforce/label/c.MS_Price_Greater';
+import MS_Error_Load_Price from '@salesforce/label/c.MS_Error_Load_Price';
+import MS_Error_Load_File from '@salesforce/label/c.MS_Error_Load_File';
+import MS_File_Upload_Success from '@salesforce/label/c.MS_File_Upload_Success';
+import MS_Success from '@salesforce/label/c.MS_Success';
+import MS_Error_Delete_File from '@salesforce/label/c.MS_Error_Delete_File';
+import MS_Error from '@salesforce/label/c.MS_Error';
+import MS_Error_Selecting_Prof from '@salesforce/label/c.MS_Error_Selecting_Prof';
+import MS_Product_Updated from '@salesforce/label/c.MS_Product_Updated';
+import MS_Product_Update from '@salesforce/label/c.MS_Product_Update';
+import MS_Error_Update_Price from '@salesforce/label/c.MS_Error_Update_Price';
+
 const fields = [DISPLAYURL_FIELD];
 
 export default class EditProductRecord extends NavigationMixin(LightningElement) {
-
+    label = {
+        MS_Price,
+        MS_Save_Butt,
+        MS_Cancel_Button,
+        MS_Delete,
+        MS_Preview,
+        MS_File_Preview,
+        MS_Price_Greater
+    }
     @track productPrice;
     @track pricebookentry;
     @track isModalOpen = true;
@@ -32,7 +58,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         if(error){ 
             this.dispatchEvent(
                 new ShowToastEvent({
-                    title: 'Error loading the price of this record',
+                    title: MS_Error_Load_Price,
                     message: error.body.message,
                     variant: 'error',
                 }),
@@ -55,7 +81,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         if(error){ 
             this.dispatchEvent(
                 new ShowToastEvent({
-                    title: 'Error loading record files',
+                    title: MS_Error_Load_File,
                     message: error.body.message,
                     variant: 'error',
                 }),
@@ -83,8 +109,8 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         refreshApex(this.wiredActivities);
         this.dispatchEvent(
           new ShowToastEvent({
-            title: "Success!",
-            message: uploadedFiles.length + " Files Uploaded Successfully.",
+            title: MS_Success,
+            message: uploadedFiles.length +" " +MS_File_Upload_Success,
             variant: "success"
           })
         );
@@ -113,7 +139,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
                 .catch(error => {
                     this.dispatchEvent(
                         new ShowToastEvent({
-                            title: 'Error',
+                            title: MS_Error,
                             message: error.body.message,
                             variant: 'error'
                         })
@@ -124,7 +150,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         .catch(error => {
             this.dispatchEvent(
                 new ShowToastEvent({
-                    title: 'Error deleting file',
+                    title: 	MS_Error_Delete_File,
                     message: error.body.message,
                     variant: 'error'
                 })
@@ -144,7 +170,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
             .catch(error => {
                 this.dispatchEvent(
                     new ShowToastEvent({
-                        title: 'Error in selecting profile image',
+                        title: 	MS_Error_Selecting_Prof,
                         message: error.body.message,
                         variant: 'error'
                     })
@@ -158,7 +184,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
             .catch(error => {
                 this.dispatchEvent(
                     new ShowToastEvent({
-                        title: 'Error',
+                        title: MS_Error,
                         message: error.body.message,
                         variant: 'error'
                     })
@@ -189,8 +215,8 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
 
     handleSuccess(event){
         const toastEvent = new ShowToastEvent ({
-            title:"Product has been updated successfully!",
-            message: "Product updated.",
+            title: MS_Product_Updated,
+            message: MS_Product_Update,
             variant: "success"
         });
         this.dispatchEvent(toastEvent);
@@ -201,7 +227,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         .catch(error => {
             this.dispatchEvent(
                 new ShowToastEvent({
-                    title: 'Error updating product price!',
+                    title: MS_Error_Update_Price,
                     message: error.body.message,
                     variant: 'error'
                 })
