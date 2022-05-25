@@ -43,6 +43,5 @@ public with sharing class filePreviewAndDownloadController {
             if(files.size() > 0) {
                 delete files; 
             }  
-    
      }
 }
