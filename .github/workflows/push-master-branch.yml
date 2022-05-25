@@ -4,7 +4,7 @@ name: Pull request deploy to master branch.
 # Definition when the workflow should run
 on:
     pull_request:
-      branches: [ main ]
+      branches: [ master ]
       paths:
         - 'force-app/**'
 jobs:
