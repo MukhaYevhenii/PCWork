@@ -204,7 +204,9 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
 
     closeModal() {
         this.isModalOpen = false;
-        this.closeQuickAction();
+        setTimeout(()=>{
+            this.closeQuickAction();
+        },1000);
     }
 
     handlePriceChange(event){
