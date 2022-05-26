@@ -49,9 +49,9 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
         if(data){ 
             this.filesList = Object.keys(data).map(item=>({"label":data[item].Title,
              "value": data[item].ContentDocumentId,
-             "imageurl":`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB240BY180&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`,
+             "imageurl":`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`,
              "fileextension": data[item].FileExtension,
-             "isProfileImage": this.isProfileImageCheck(`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB240BY180&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`)
+             "isProfileImage": this.isProfileImageCheck(`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`)
             }))
         }
         if(error){ 

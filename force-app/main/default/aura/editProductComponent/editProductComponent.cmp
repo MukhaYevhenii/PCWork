@@ -1,4 +1,4 @@
 <aura:component implements="lightning:actionOverride,lightning:hasPageReference,force:lightningQuickAction,force:hasRecordId,lightning:isUrlAddressable,flexipage:availableForAllPageTypes" access="global">
     <lightning:workspaceAPI aura:id="workspace"/>    
-<c:editProductRecord Id="{!v.recordId}" onclose="{!c.closeQA}"/>
+    <c:editProductRecord Id="{!v.recordId}" onclose="{!c.closeQA}"/>
 </aura:component>

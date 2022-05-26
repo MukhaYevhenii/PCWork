@@ -66,6 +66,11 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         }
     }
 
+    closeQuickAction() {
+        const closeQA = new CustomEvent('close');
+        this.dispatchEvent(closeQA);
+    }
+
     @wire(getRelatedFilesByRecordId, {recordId: '$Id'})
     wiredResult(result){ 
         const { data, error } = result;
@@ -199,7 +204,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
 
     closeModal() {
         this.isModalOpen = false;
-        
+        this.closeQuickAction();
     }
 
     handlePriceChange(event){
