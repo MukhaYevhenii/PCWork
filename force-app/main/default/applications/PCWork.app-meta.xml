@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>PCWork</label>
+    <navType>Console</navType>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>Search_Product</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>PCWork_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>Search_Product</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Lead</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Product2</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>
