@@ -10,12 +10,18 @@ import MS_Cancel_Button from '@salesforce/label/c.MS_Cancel_Button';
 import MS_SaveNext from '@salesforce/label/c.MS_SaveNext';
 import MS_Price from '@salesforce/label/c.MS_Price';
 import MS_Error_Update_Price from '@salesforce/label/c.MS_Error_Update_Price';
+import MS_Price_Greater from '@salesforce/label/c.MS_Price_Greater';
+import MS_Close_Butt from '@salesforce/label/c.MS_Close_Butt';
+
+
 
 export default class CreateProductRecord extends NavigationMixin(LightningElement) {
     label = {
         MS_Cancel_Button,
         MS_SaveNext,
-        MS_Price
+        MS_Price,
+        MS_Price_Greater,
+        MS_Close_Butt
     }
     @track productPrice;
     @track isModalImageOpen = false;
