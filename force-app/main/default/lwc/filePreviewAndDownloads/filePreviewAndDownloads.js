@@ -1,8 +1,8 @@
 import { LightningElement, api, wire, track } from 'lwc';
-import getRelatedFilesByRecordId from '@salesforce/apex/filePreviewAndDownloadController.getRelatedFilesByRecordId';
-import deleteContentDocument from '@salesforce/apex/filePreviewAndDownloadController.deleteContentDocument';
-import updateDisplayURL from '@salesforce/apex/filePreviewAndDownloadController.updateDisplayURL';
-import deleteAllFilesByRecordId from '@salesforce/apex/filePreviewAndDownloadController.deleteAllFilesByRecordId';
+import getRelatedFilesByRecordId from '@salesforce/apex/PW_FilePreviewAndDownloadController.getRelatedFilesByRecordId';
+import deleteContentDocument from '@salesforce/apex/PW_FilePreviewAndDownloadController.deleteContentDocument';
+import updateDisplayURL from '@salesforce/apex/PW_FilePreviewAndDownloadController.updateDisplayURL';
+import deleteAllFilesByRecordId from '@salesforce/apex/PW_FilePreviewAndDownloadController.deleteAllFilesByRecordId';
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
 import { refreshApex } from "@salesforce/apex";
 import {NavigationMixin} from 'lightning/navigation';

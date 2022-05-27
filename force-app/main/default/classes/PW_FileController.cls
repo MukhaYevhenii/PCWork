@@ -1,4 +1,4 @@
-public with sharing class fileController {
+public with sharing class PW_FileController {
     @AuraEnabled(cacheable=true)
     public static List<ContentVersion> getVersionFiles(String recordId){
        

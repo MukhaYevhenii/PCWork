@@ -1,4 +1,4 @@
-public with sharing class editRecordController {
+public with sharing class PW_EditRecordController {
 
     @AuraEnabled(cacheable=true)
     public static PricebookEntry getStandardPriceProduct(String productId){

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>WebToLeadController</members>
-		<members>WebToLeadControllerTest</members>
-		<members>customSearchProductTest</members>
-		<members>customSearchSobject</members>
-		<members>editRecordController</members>
-		<members>editRecordControllerTest</members>
-		<members>fileController</members>
-		<members>fileControllerTest</members>
-		<members>filePreviewAndDownloadController</members>
-		<members>filePreviewAndDownloadControllerTest</members>
+		<members>PW_CustomSearchProduct</members>
+		<members>PW_CustomSearchProductTest</members>
+		<members>PW_EditRecordController</members>
+		<members>PW_EditRecordControllerTest</members>
+		<members>PW_FileController</members>
+		<members>PW_FileControllerTest</members>
+		<members>PW_FilePreviewAndDownloadController</members>
+		<members>PW_FilePreviewAndDownloadControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -79,10 +77,6 @@
 		<members>MS_Upload_Product_Images</members>
 		<members>MS_Upload_Success</members>
 		<name>CustomLabel</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomLabels</name>
 	</types>
 	<types>
 		<members>Product2</members>

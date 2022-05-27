@@ -1,6 +1,6 @@
 import { LightningElement, wire, api, track } from "lwc";
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
-import getFileVersions from "@salesforce/apex/fileController.getVersionFiles";
+import getFileVersions from "@salesforce/apex/PW_FileController.getVersionFiles";
 import MS_Error_Load_File from '@salesforce/label/c.MS_Error_Load_File';
 
 

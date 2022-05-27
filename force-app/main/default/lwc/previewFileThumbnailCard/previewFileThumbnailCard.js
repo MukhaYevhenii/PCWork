@@ -1,5 +1,5 @@
 import { LightningElement, api } from "lwc";
-import haveDisplayUrl from "@salesforce/apex/fileController.haveDisplayUrl";
+import haveDisplayUrl from "@salesforce/apex/PW_FileController.haveDisplayUrl";
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
 
 import MS_Error_Selecting_Prof from '@salesforce/label/c.MS_Error_Selecting_Prof';
