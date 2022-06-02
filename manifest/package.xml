@@ -119,6 +119,7 @@
 	</types>
 	<types>
 		<members>Pricebook_manager</members>
+		<members>Product_Record_Page</members>
 		<members>Search_Product</members>
 		<name>FlexiPage</name>
 	</types>
