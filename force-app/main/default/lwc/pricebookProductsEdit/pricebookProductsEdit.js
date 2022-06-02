@@ -18,7 +18,7 @@ import MS_Price from '@salesforce/label/c.MS_Price';
 export default class PricebookProductsEdit extends LightningElement {
     @api productsList = [];
     @track isModalOpen = true;
-    @track percentNumber;
+    @track percentNumber = 0;
     @track priceEuroNumber = 0;
     @track tempProductList = [];
     @track blockedPercent = false;
