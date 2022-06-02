@@ -280,4 +280,151 @@
         <shortDescription>MS_Upload_Success</shortDescription>
         <value>Files Uploaded Successfully.</value>
     </labels>
+    <labels>
+        <fullName>MS_Advanced_Price_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Advanced_Price_Label</shortDescription>
+        <value>Advanced price editing</value>
+    </labels>
+    <labels>
+        <fullName>MS_Created_Pricebook_Done</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Created_Pricebook_Done</shortDescription>
+        <value>Pricebook created :</value>
+    </labels>
+    <labels>
+        <fullName>MS_Edit_By_Euro</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Edit_By_Euro</shortDescription>
+        <value>Specify by how much € you want to reduce/increase the price.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Edit_By_Percent</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Edit_By_Percent</shortDescription>
+        <value>Specify by how much by Procent you want to reduce/increase the price.</value>
+    </labels>
+    <labels>
+        <fullName>MS_End_Date_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_End_Date_Placeholder</shortDescription>
+        <value>End date</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Occured</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Occured</shortDescription>
+        <value>An Error Occured!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Pricebook_Title</shortDescription>
+        <value>Error in creating pricebook!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Error_Pricebook_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Error_Pricebook_Message</shortDescription>
+        <value>The end date must be greater than the start date.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Is_Active</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Is_Active</shortDescription>
+        <value>Is active</value>
+    </labels>
+    <labels>
+        <fullName>MS_Label_Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Label_Preview</shortDescription>
+        <value>Preview</value>
+    </labels>
+    <labels>
+        <fullName>MS_New_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_New_Pricebook</shortDescription>
+        <value>New pricebook</value>
+    </labels>
+    <labels>
+        <fullName>MS_Price_Editing_Advanced</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Price_Editing_Advanced</shortDescription>
+        <value>Advanced price editing</value>
+    </labels>
+    <labels>
+        <fullName>MS_Price_Update</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Price_Update</shortDescription>
+        <value>Prices Updated Successfully!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Price_Updated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Price_Updated</shortDescription>
+        <value>Price Updated Successfully!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Pricebook_Created</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Pricebook_Created</shortDescription>
+        <value>Pricebook has been created successfully!</value>
+    </labels>
+    <labels>
+        <fullName>MS_Pricebook_Name_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Pricebook_Name_Placeholder</shortDescription>
+        <value>Pricebook Name</value>
+    </labels>
+    <labels>
+        <fullName>MS_Pricebook_Not_Contain</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Pricebook_Not_Contain</shortDescription>
+        <value>The pricebook does not contain any product.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Pricebook_Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Pricebook_Product</shortDescription>
+        <value>Pricebook&apos;s products</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Name</shortDescription>
+        <value>Product name</value>
+    </labels>
+    <labels>
+        <fullName>MS_Select_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Select_Pricebook</shortDescription>
+        <value>Please select a pricebook.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Start_date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Start_date</shortDescription>
+        <value>Start date</value>
+    </labels>
 </CustomLabels>

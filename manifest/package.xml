@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>PW_CustomSearchPricebook</members>
+		<members>PW_CustomSearchPricebookTest</members>
 		<members>PW_CustomSearchProduct</members>
 		<members>PW_CustomSearchProductTest</members>
 		<members>PW_EditRecordController</members>
@@ -9,6 +11,10 @@
 		<members>PW_FileControllerTest</members>
 		<members>PW_FilePreviewAndDownloadController</members>
 		<members>PW_FilePreviewAndDownloadControllerTest</members>
+		<members>PW_GetProductsFromPricebook</members>
+		<members>PW_GetProductsFromPricebookTest</members>
+		<members>PW_NewPricebookController</members>
+		<members>PW_NewPricebookControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -29,6 +35,8 @@
 		<name>CustomApplication</name>
 	</types>
 	<types>
+		<members>Pricebook2.End_Date__c</members>
+		<members>Pricebook2.Start_Date__c</members>
 		<members>Product2.Available__c</members>
 		<members>Product2.Model__c</members>
 		<members>Product2.Producer__c</members>
@@ -37,26 +45,44 @@
 	</types>
 	<types>
 		<members>MS</members>
+		<members>MS_Advanced_Price_Label</members>
 		<members>MS_Available_Column</members>
 		<members>MS_Cancel_Button</members>
 		<members>MS_Clear</members>
 		<members>MS_Close_Butt</members>
+		<members>MS_Created_Pricebook_Done</members>
 		<members>MS_Delete</members>
+		<members>MS_Edit_By_Euro</members>
+		<members>MS_Edit_By_Percent</members>
+		<members>MS_End_Date_Placeholder</members>
 		<members>MS_Error</members>
 		<members>MS_Error_Delete_File</members>
 		<members>MS_Error_Load_File</members>
 		<members>MS_Error_Load_Price</members>
+		<members>MS_Error_Occured</members>
+		<members>MS_Error_Pricebook</members>
+		<members>MS_Error_Pricebook_Message</members>
 		<members>MS_Error_Selecting_Prof</members>
 		<members>MS_Error_Update_Price</members>
 		<members>MS_Family_Placeholder</members>
 		<members>MS_Fields_Empty</members>
 		<members>MS_File_Preview</members>
 		<members>MS_File_Upload_Success</members>
+		<members>MS_Is_Active</members>
+		<members>MS_Label_Preview</members>
 		<members>MS_Model_Column</members>
 		<members>MS_Model_Placeholder</members>
+		<members>MS_New_Pricebook</members>
 		<members>MS_Preview</members>
 		<members>MS_Price</members>
+		<members>MS_Price_Editing_Advanced</members>
 		<members>MS_Price_Greater</members>
+		<members>MS_Price_Update</members>
+		<members>MS_Price_Updated</members>
+		<members>MS_Pricebook_Created</members>
+		<members>MS_Pricebook_Name_Placeholder</members>
+		<members>MS_Pricebook_Not_Contain</members>
+		<members>MS_Pricebook_Product</members>
 		<members>MS_Producer_Column</members>
 		<members>MS_Producer_Placeholder</members>
 		<members>MS_Product_Code_Column</members>
@@ -64,6 +90,7 @@
 		<members>MS_Product_Create_ID</members>
 		<members>MS_Product_Created_Success</members>
 		<members>MS_Product_Family_Column</members>
+		<members>MS_Product_Name</members>
 		<members>MS_Product_Name_Column</members>
 		<members>MS_Product_Update</members>
 		<members>MS_Product_Updated</members>
@@ -73,45 +100,86 @@
 		<members>MS_Save_Butt</members>
 		<members>MS_Search</members>
 		<members>MS_Search_Product</members>
+		<members>MS_Select_Pricebook</members>
+		<members>MS_Start_date</members>
 		<members>MS_Success</members>
 		<members>MS_Upload_Product_Images</members>
 		<members>MS_Upload_Success</members>
 		<name>CustomLabel</name>
 	</types>
 	<types>
+		<members>Pricebook2</members>
 		<members>Product2</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>Pricebook_manager</members>
 		<members>Search_Product</members>
 		<name>CustomTab</name>
 	</types>
 	<types>
+		<members>Pricebook_manager</members>
+		<members>Product_Record_Page</members>
 		<members>Search_Product</members>
 		<name>FlexiPage</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>FlowDefinition</name>
+	</types>
+	<types>
+		<members>Pricebook2-Price Book Layout</members>
 		<members>Product2-Product Layout</members>
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>createNewPricebook</members>
 		<members>createProductRecord</members>
 		<members>editProductRecord</members>
 		<members>filePreviewAndDownloads</members>
 		<members>previewFileModal</members>
 		<members>previewFileThumbnailCard</members>
 		<members>previewFileThumbnails</members>
+		<members>pricebookDetailPage</members>
+		<members>pricebookDetailPagePricebookProduct</members>
+		<members>pricebookEnddateInput</members>
+		<members>pricebookIsActiveInput</members>
+		<members>pricebookNameInput</members>
+		<members>pricebookProductsEdit</members>
+		<members>pricebookStartdateInput</members>
 		<members>productCodeInput</members>
 		<members>productFamilyPicklist</members>
 		<members>productModelInput</members>
 		<members>productNameInput</members>
 		<members>productProducerPicklist</members>
 		<members>searchBox</members>
+		<members>searchBoxPricebook</members>
+		<members>searchBoxPricebookResult</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>Record_Select</members>
+		<name>LightningMessageChannel</name>
 	</types>
 	<types>
 		<members>Product2.AllProducts</members>
 		<name>ListView</name>
+	</types>
+	<types>
+		<members>Experience_Profile_Manager</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Admin</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>Pricebook2.startdatenotgreaterthanendtime</members>
+		<name>ValidationRule</name>
 	</types>
 	<types>
 		<members>Product2.New_Action</members>
