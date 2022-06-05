@@ -113,9 +113,17 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>CustomSite</name>
+	</types>
+	<types>
 		<members>Pricebook_manager</members>
 		<members>Search_Product</members>
 		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ExperienceBundle</name>
 	</types>
 	<types>
 		<members>Pricebook_manager</members>
@@ -176,6 +184,10 @@
 	<types>
 		<members>Admin</members>
 		<name>Profile</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>SiteDotCom</name>
 	</types>
 	<types>
 		<members>Pricebook2.startdatenotgreaterthanendtime</members>
