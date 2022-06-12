@@ -22,13 +22,6 @@
   }, {
     "components" : [ {
       "componentAttributes" : { },
-      "componentName" : "c:contentPage",
-      "id" : "b0208739-f8d5-4956-acdd-089a34f8e584",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : { },
       "componentName" : "c:contentSlider",
       "id" : "3cb9a8a8-6580-497c-9af0-81e49b198373",
       "renderPriority" : "NEUTRAL",
