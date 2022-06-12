@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>PW_ContentDistributionLinks</members>
+		<members>PW_ContentDistributionLinksTest</members>
+		<members>PW_ConverterDistributionPublicUrl</members>
 		<members>PW_CustomSearchPricebook</members>
 		<members>PW_CustomSearchPricebookTest</members>
 		<members>PW_CustomSearchProduct</members>
@@ -13,8 +16,14 @@
 		<members>PW_FilePreviewAndDownloadControllerTest</members>
 		<members>PW_GetProductsFromPricebook</members>
 		<members>PW_GetProductsFromPricebookTest</members>
+		<members>PW_GoogleAuth</members>
+		<members>PW_GoogleAuthTest</members>
 		<members>PW_NewPricebookController</members>
 		<members>PW_NewPricebookControllerTest</members>
+		<members>PW_ProductsContentPage</members>
+		<members>PW_ProductsContentPageTest</members>
+		<members>PW_RecentlyViewedProducts</members>
+		<members>PW_RecentlyViewedProductsTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -22,13 +31,25 @@
 		<name>ApexTestSuite</name>
 	</types>
 	<types>
+		<members>PW_CreateContentDistribution</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
 		<members>createNewRecordComponent</members>
 		<members>editProductComponent</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>AuthProvider</name>
+	</types>
+	<types>
 		<members>Product2.CompactLayoutCustom</members>
 		<name>CompactLayout</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ContentAsset</name>
 	</types>
 	<types>
 		<members>PCWork</members>
@@ -108,14 +129,27 @@
 		<name>CustomLabel</name>
 	</types>
 	<types>
+		<members>Account</members>
 		<members>Pricebook2</members>
 		<members>Product2</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>PC_Work</members>
+		<name>CustomSite</name>
+	</types>
+	<types>
 		<members>Pricebook_manager</members>
 		<members>Search_Product</members>
 		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Contact.Standard_Contact_Duplicate_Rule</members>
+		<name>DuplicateRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ExperienceBundle</name>
 	</types>
 	<types>
 		<members>Pricebook_manager</members>
@@ -137,10 +171,13 @@
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>contentSlider</members>
 		<members>createNewPricebook</members>
 		<members>createProductRecord</members>
 		<members>editProductRecord</members>
 		<members>filePreviewAndDownloads</members>
+		<members>footerCompany</members>
+		<members>getRecentlyViewedProducts</members>
 		<members>previewFileModal</members>
 		<members>previewFileThumbnailCard</members>
 		<members>previewFileThumbnails</members>
@@ -156,6 +193,7 @@
 		<members>productModelInput</members>
 		<members>productNameInput</members>
 		<members>productProducerPicklist</members>
+		<members>productRecord</members>
 		<members>searchBox</members>
 		<members>searchBoxPricebook</members>
 		<members>searchBoxPricebookResult</members>
@@ -170,12 +208,48 @@
 		<name>ListView</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Network</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NetworkBranding</name>
+	</types>
+	<types>
 		<members>Experience_Profile_Manager</members>
 		<name>PermissionSet</name>
 	</types>
 	<types>
-		<members>Admin</members>
+		<members>Community Customer</members>
+		<members>Customer Community Login User</members>
+		<members>Customer Community Plus Login User</members>
+		<members>Customer Community Plus User</members>
+		<members>Customer Community User</members>
+		<members>Customer Portal Manager Custom</members>
+		<members>Customer Portal Manager Standard</members>
+		<members>Guest License User</members>
+		<members>PC-Work Profile</members>
+		<members>Partner Community Login User</members>
+		<members>Partner Community User</members>
 		<name>Profile</name>
+	</types>
+	<types>
+		<members>CEO</members>
+		<name>Role</name>
+	</types>
+	<types>
+		<members>GoogleApps</members>
+		<name>Settings</name>
+	</types>
+	<types>
+		<members>PCworklogo</members>
+		<name>StaticResource</name>
+	</types>
+	<types>
+		<members>PC-Work.Customer_Members</members>
+		<members>PC-Work.Members_without_contribution</members>
+		<members>PC-Work.Partner_and_Customer_members</members>
+		<name>UserCriteria</name>
 	</types>
 	<types>
 		<members>Pricebook2.startdatenotgreaterthanendtime</members>
