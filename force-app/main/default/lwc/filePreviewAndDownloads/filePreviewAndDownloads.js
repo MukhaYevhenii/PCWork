@@ -212,6 +212,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
     }
 
     saveAction(){
+        console.log(this.displayurl );
         if(this.displayurl == null){
             updateDisplayURL({ recordId: this.recordId, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'});
         }

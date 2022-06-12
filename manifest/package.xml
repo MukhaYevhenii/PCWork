@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>PW_ContentDistributionLinks</members>
+		<members>PW_ContentDistributionLinksTest</members>
+		<members>PW_ConverterDistributionPublicUrl</members>
 		<members>PW_CustomSearchPricebook</members>
 		<members>PW_CustomSearchPricebookTest</members>
 		<members>PW_CustomSearchProduct</members>
@@ -15,6 +18,10 @@
 		<members>PW_GetProductsFromPricebookTest</members>
 		<members>PW_NewPricebookController</members>
 		<members>PW_NewPricebookControllerTest</members>
+		<members>PW_ProductsContentPage</members>
+		<members>PW_ProductsContentPageTest</members>
+		<members>PW_RecentlyViewedProducts</members>
+		<members>PW_RecentlyViewedProductsTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -137,10 +144,14 @@
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>contentSlider</members>
 		<members>createNewPricebook</members>
 		<members>createProductRecord</members>
 		<members>editProductRecord</members>
 		<members>filePreviewAndDownloads</members>
+		<members>footerCompany</members>
+		<members>getRecentlyViewedProducts</members>
+		<members>headerLogo</members>
 		<members>previewFileModal</members>
 		<members>previewFileThumbnailCard</members>
 		<members>previewFileThumbnails</members>
@@ -156,6 +167,7 @@
 		<members>productModelInput</members>
 		<members>productNameInput</members>
 		<members>productProducerPicklist</members>
+		<members>productRecord</members>
 		<members>searchBox</members>
 		<members>searchBoxPricebook</members>
 		<members>searchBoxPricebookResult</members>

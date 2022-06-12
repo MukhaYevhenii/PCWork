@@ -8,5 +8,5 @@ public without sharing class PW_ProductsContentPage {
         @AuraEnabled(cacheable = true)
         public static List<AggregateResult> getNumberOfRecords() {
                 return [SELECT COUNT(Id) totalRecords FROM Product2 WHERE CreatedDate >= LAST_N_DAYS:7 AND Product2.IsActive=true];
-        }
+    }
 }
