@@ -2,7 +2,7 @@ global class PW_GoogleAuth implements Auth.RegistrationHandler{
 
 global User createUser(Id portalId, Auth.UserData data){
         Contact contact = new Contact();
-        contact.accountId = [SELECT Id FROM account WHERE Id='0017Q00000I2V4QQAV' LIMIT 1].Id;
+        contact.accountId = [SELECT Id FROM account WHERE Name = 'Test Account' LIMIT 1].Id;
         contact.email = data.email;
         contact.firstName = data.firstName;
         
