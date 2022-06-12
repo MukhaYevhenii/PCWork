@@ -1,0 +1,84 @@
+{
+  "appPageId" : "b0dd2247-1c2c-44a6-9235-28d36189b315",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "id" : "f4b5279f-472f-4316-9db4-930be03c5db4",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "52a11afa-97fa-466e-beb1-26f61db36edd",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:getRecentlyViewedProducts",
+      "id" : "04c79480-964a-449d-b116-da6723621721",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ebc43a0a-1937-49bb-8ede-a40047da8f98",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:contentPage",
+      "id" : "b0208739-f8d5-4956-acdd-089a34f8e584",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:contentSlider",
+      "id" : "3cb9a8a8-6580-497c-9af0-81e49b198373",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d7bdfbff-de60-45a2-8a59-e2d82063bf06",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:getRecentlyViewedProducts",
+      "id" : "1ae10d60-2580-43b5-b3be-936a9ae8b6ea",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6565d94f-d017-4332-81a1-3122888823ee",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:footerCompany",
+      "id" : "a1362894-3000-46b7-b1ed-890e43b950f4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9b666bca-de74-436d-a5c4-3c5d8626a2c0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "7d7ca249-00fb-4371-bd77-e7e17ffab33d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b2d9de53-4ec0-492b-8fbb-de70e34c9a29",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

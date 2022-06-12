@@ -29,6 +29,10 @@
 		<name>ApexTestSuite</name>
 	</types>
 	<types>
+		<members>PW_CreateContentDistribution</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
 		<members>createNewRecordComponent</members>
 		<members>editProductComponent</members>
 		<name>AuraDefinitionBundle</name>
@@ -36,6 +40,10 @@
 	<types>
 		<members>Product2.CompactLayoutCustom</members>
 		<name>CompactLayout</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ContentAsset</name>
 	</types>
 	<types>
 		<members>PCWork</members>
@@ -120,9 +128,21 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>CustomSite</name>
+	</types>
+	<types>
 		<members>Pricebook_manager</members>
 		<members>Search_Product</members>
 		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Contact.Standard_Contact_Duplicate_Rule</members>
+		<name>DuplicateRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ExperienceBundle</name>
 	</types>
 	<types>
 		<members>Pricebook_manager</members>
@@ -151,7 +171,6 @@
 		<members>filePreviewAndDownloads</members>
 		<members>footerCompany</members>
 		<members>getRecentlyViewedProducts</members>
-		<members>headerLogo</members>
 		<members>previewFileModal</members>
 		<members>previewFileThumbnailCard</members>
 		<members>previewFileThumbnails</members>
@@ -182,12 +201,41 @@
 		<name>ListView</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Network</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NetworkBranding</name>
+	</types>
+	<types>
 		<members>Experience_Profile_Manager</members>
 		<name>PermissionSet</name>
 	</types>
 	<types>
 		<members>Admin</members>
+		<members>Community Customer</members>
+		<members>PC-Work Profile</members>
+		<members>PcWork Profile</members>
 		<name>Profile</name>
+	</types>
+	<types>
+		<members>CEO</members>
+		<name>Role</name>
+	</types>
+	<types>
+		<members>GoogleApps</members>
+		<name>Settings</name>
+	</types>
+	<types>
+		<members>PCworklogo</members>
+		<name>StaticResource</name>
+	</types>
+	<types>
+		<members>PC-Work.Customer_Members</members>
+		<members>PC-Work.Members_without_contribution</members>
+		<members>PC-Work.Partner_and_Customer_members</members>
+		<name>UserCriteria</name>
 	</types>
 	<types>
 		<members>Pricebook2.startdatenotgreaterthanendtime</members>
