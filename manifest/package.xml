@@ -16,6 +16,7 @@
 		<members>PW_FilePreviewAndDownloadControllerTest</members>
 		<members>PW_GetProductsFromPricebook</members>
 		<members>PW_GetProductsFromPricebookTest</members>
+		<members>PW_GoogleAuth</members>
 		<members>PW_NewPricebookController</members>
 		<members>PW_NewPricebookControllerTest</members>
 		<members>PW_ProductsContentPage</members>
@@ -230,7 +231,6 @@
 		<members>PC-Work Profile</members>
 		<members>Partner Community Login User</members>
 		<members>Partner Community User</members>
-		<members>PcWork Profile</members>
 		<name>Profile</name>
 	</types>
 	<types>
