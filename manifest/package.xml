@@ -213,10 +213,7 @@
 		<name>PermissionSet</name>
 	</types>
 	<types>
-		<members>Admin</members>
-		<members>Community Customer</members>
-		<members>PC-Work Profile</members>
-		<members>PcWork Profile</members>
+		<members>*</members>
 		<name>Profile</name>
 	</types>
 	<types>

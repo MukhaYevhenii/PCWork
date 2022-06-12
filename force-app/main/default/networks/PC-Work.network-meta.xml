@@ -29,7 +29,7 @@
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <networkMemberGroups>
         <profile>Admin</profile>
-        <profile>standard</profile>
+        <profile>Standard</profile>
         <profile>Community Customer</profile>
     </networkMemberGroups>
     <networkPageOverrides>
