@@ -221,7 +221,6 @@
 	<types>
 		<members>Admin</members>
 		<members>Community Customer</members>
-		<members>PC-Work Profile</members>
 		<members>Standard</members>
 		<name>Profile</name>
 	</types>
