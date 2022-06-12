@@ -66,6 +66,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PW_GoogleAuth</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PW_NewPricebookController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
