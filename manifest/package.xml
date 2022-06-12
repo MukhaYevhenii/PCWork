@@ -219,7 +219,6 @@
 		<name>PermissionSet</name>
 	</types>
 	<types>
-		<members>Admin</members>
 		<members>Community Customer</members>
 		<members>Customer Community Login User</members>
 		<members>Customer Community Plus Login User</members>
