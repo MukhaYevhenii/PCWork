@@ -1,0 +1,18 @@
+<template>
+    <h1 style="font-size: 20px; text-align:center;margin-top: 5%;">Recently view products</h1>
+    <div style="display: flex; justify-content: center;">
+        <div class="slds-size_2-of-4">
+        <lightning-carousel>
+            <template for:each={recentlyProductsList} for:item="product">
+            <lightning-carousel-image style="border-color: #fff;"
+                src={product.DisplayUrl}
+                header={product.Name}
+                key={product.Id}
+                href = "javascript:void(0);"
+                description={product.Family}>
+            </lightning-carousel-image>
+        </template>
+        </lightning-carousel>
+        </div>
+  </div>
+</template>

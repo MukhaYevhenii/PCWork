@@ -3,6 +3,7 @@ import getRelatedFilesByRecordId from '@salesforce/apex/PW_FilePreviewAndDownloa
 import deleteContentDocument from '@salesforce/apex/PW_FilePreviewAndDownloadController.deleteContentDocument';
 import updateDisplayURL from '@salesforce/apex/PW_FilePreviewAndDownloadController.updateDisplayURL';
 import deleteAllFilesByRecordId from '@salesforce/apex/PW_FilePreviewAndDownloadController.deleteAllFilesByRecordId';
+import getContentDownloadUrl from '@salesforce/apex/PW_ContentDistributionLinks.getContentDownloadUrl';
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
 import { refreshApex } from "@salesforce/apex";
 import {NavigationMixin} from 'lightning/navigation';
@@ -41,18 +42,29 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
     @track isModalOpen = true;
     @track filesList = [];
     wiredActivities;
+    contentVersionId ='';
     acceptedFormats = '.png,.jpg,.jpeg';
+
     @wire(getRelatedFilesByRecordId, {recordId: '$recordId'})
-    wiredResult(result){ 
+     wiredResult(result){ 
         const { data, error } = result;
         this.wiredActivities = result;
         if(data){ 
-            this.filesList = Object.keys(data).map(item=>({"label":data[item].Title,
-             "value": data[item].ContentDocumentId,
-             "imageurl":`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`,
-             "fileextension": data[item].FileExtension,
-             "isProfileImage": this.isProfileImageCheck(`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`)
-            }))
+            Promise.all( Object.keys(data).map( async item=>{
+                this.contentVersionId = data[item].Id;
+                const publicUrl = await this.displayUrlConverted();
+                const temp =  {
+                    "label":data[item].Title,
+                     "value": data[item].ContentDocumentId,
+                     "converturl":  publicUrl,
+                     "imageurl":`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`,
+                     "fileextension": data[item].FileExtension,
+                     "isProfileImage": this.isProfileImageCheck(publicUrl)
+                    }
+                    return temp;
+             })).then((result) => {
+                this.filesList = result;
+             })
         }
         if(error){ 
             this.dispatchEvent(
@@ -64,6 +76,16 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
             );
         }
     }
+
+    displayUrlConverted(){
+        return new Promise( (resolutionFunc,rejectionFunc) => {
+            getContentDownloadUrl({contentVersionId: this.contentVersionId})
+            .then(result => {
+                resolutionFunc(result);
+            });
+        }); 
+    }
+    
 
     @wire(getRecord, { recordId: '$recordId', fields })
     product;
@@ -99,7 +121,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
                 );
             });
         } else {
-            updateDisplayURL({ recordId: this.recordId, url: ''})
+            updateDisplayURL({ recordId: this.recordId, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'})
             .then(result => {
                 refreshApex(this.wiredActivities);
             })
@@ -137,7 +159,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
         .then(result => {
             refreshApex(this.wiredActivities);
             if(url == this.displayurl){
-                updateDisplayURL({ recordId: this.recordId, url: ''})
+                updateDisplayURL({ recordId: this.recordId, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'})
                 .then(result => {
                     refreshApex(this.wiredActivities);
                 })
@@ -190,6 +212,9 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
     }
 
     saveAction(){
+        if(this.displayurl == null){
+            updateDisplayURL({ recordId: this.recordId, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'});
+        }
         this.closeModal();
         eval("$A.get('e.force:refreshView').fire();");
         this[NavigationMixin.Navigate]({
@@ -207,7 +232,7 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
             recordId: this.recordId
         })
         .then(result => {
-            updateDisplayURL({ recordId: this.recordId, url: ''})
+            updateDisplayURL({ recordId: this.recordId, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'})
             .then(result => {
                 refreshApex(this.wiredActivities);
             })
@@ -233,6 +258,9 @@ export default class FilePreviewAndDownloads extends NavigationMixin(LightningEl
     }
 
     saveAndNewAction(){
+        if(this.displayurl == null){
+            updateDisplayURL({ recordId: this.recordId, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'});
+        }
         this.closeModal();
         eval("$A.get('e.force:refreshView').fire();");
         this[NavigationMixin.Navigate]({

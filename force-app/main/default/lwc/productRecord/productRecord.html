@@ -1,0 +1,12 @@
+<template>
+    <div style="display:flex; min-height: 240px;flex-direction: column;">
+        <div style="margin: auto; max-width: 220px; max-height: 155px">
+            <img width="220" style="width:100%; max-width: 220px; height:100%; max-height: 155px;" height="155" src={productRecord.DisplayUrl} />
+        </div>
+        <div style="display: flex;justify-content: center; flex-direction: column">
+            <h6 style="font-size: 11px; text-align:center">{productRecord.Family}</h6>
+            <h3 style="font-size: 14px; text-align:center">{productRecord.Name}</h3>
+            <h3 style="font-weight: bold; font-size: 14px; text-align:center">€{productRecord.UnitPrice}</h3>
+        </div>
+    </div>
+</template>
