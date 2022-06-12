@@ -264,6 +264,10 @@
 		<name>Settings</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>SiteDotCom</name>
+	</types>
+	<types>
 		<members>PCworklogo</members>
 		<name>StaticResource</name>
 	</types>
