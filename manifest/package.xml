@@ -17,6 +17,7 @@
 		<members>PW_GetProductsFromPricebook</members>
 		<members>PW_GetProductsFromPricebookTest</members>
 		<members>PW_GoogleAuth</members>
+		<members>PW_GoogleAuthTest</members>
 		<members>PW_NewPricebookController</members>
 		<members>PW_NewPricebookControllerTest</members>
 		<members>PW_ProductsContentPage</members>

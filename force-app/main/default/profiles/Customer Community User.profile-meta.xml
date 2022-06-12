@@ -70,6 +70,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PW_GoogleAuthTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PW_NewPricebookController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
