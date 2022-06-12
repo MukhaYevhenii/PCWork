@@ -134,7 +134,7 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>PC_Work</members>
 		<name>CustomSite</name>
 	</types>
 	<types>
@@ -221,7 +221,16 @@
 	<types>
 		<members>Admin</members>
 		<members>Community Customer</members>
-		<members>Standard</members>
+		<members>Customer Community Login User</members>
+		<members>Customer Community Plus Login User</members>
+		<members>Customer Community Plus User</members>
+		<members>Customer Community User</members>
+		<members>Customer Portal Manager Custom</members>
+		<members>Customer Portal Manager Standard</members>
+		<members>Guest License User</members>
+		<members>PC-Work Profile</members>
+		<members>Partner Community Login User</members>
+		<members>Partner Community User</members>
 		<name>Profile</name>
 	</types>
 	<types>
@@ -231,10 +240,6 @@
 	<types>
 		<members>GoogleApps</members>
 		<name>Settings</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>SiteDotCom</name>
 	</types>
 	<types>
 		<members>PCworklogo</members>
