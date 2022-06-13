@@ -2,29 +2,22 @@
     <aura:attribute name="record" type="Object"/>
     <aura:attribute name="simpleRecord" type="Object"/>
     <aura:attribute name="recordError" type="String"/>
-    <force:recordData aura:id="recordLoader"
-      recordId="{!v.recordId}"
-      layoutType="FULL"
-      targetRecord="{!v.record}"
-      targetFields="{!v.simpleRecord}"
-      targetError="{!v.recordError}"  />
-    <!-- Display a header with details about the record -->
     <div class="slds-page-header">
         <div class="slds-page-header__row">
           <div class="slds-page-header__col-title">
             <div class="slds-media">
               <div class="slds-media__figure">
-                    <img src="{!v.simpleRecord.DisplayUrl}" height="40" width="40"/>
+                    <img src="{!v.record.DisplayUrl}" height="40" width="40"/>
               </div>
               <div class="slds-media__body">
                 <div class="slds-page-header__name">
                   <div class="slds-page-header__name-title">
                     <h1>
-                      <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets"><a href="{! $Site.siteUrlPrefix + '/detail/' + v.simpleRecord.Id}">{!v.simpleRecord.Name}</a></span>
+                      <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets"><a href="{! $Site.siteUrlPrefix + '/detail/' + v.record.Id}">{!v.record.Name}</a></span>
                     </h1>
                   </div>
                 </div>
-                <p class="slds-page-header__name-meta">{!v.simpleRecord.Model__c} • {!v.simpleRecord.Producer__c} • {!v.simpleRecord.Family}</p>
+                <p class="slds-page-header__name-meta">{!v.record.Model__c} • {!v.record.Producer__c} • {!v.record.Family}</p>
               </div>
             </div>
           </div>

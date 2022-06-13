@@ -6,9 +6,21 @@
       action.setCallback(this, function(response) {
         var state = response.getState();
         if (state === 'SUCCESS') {
-          var ids = response.getReturnValue();
-          console.log(ids);
-          sessionStorage.setItem('customSearch--recordIds', JSON.stringify(ids));
+          var objects = response.getReturnValue();
+          if(objects.length==0){
+            var toastEvent = $A.get("e.force:showToast");
+              toastEvent.setParams({
+                 "title": 'Information',
+                 "message": 'No products were found.',
+                 "type": 'info'
+              });
+              toastEvent.fire();
+              var navEvt = $A.get('e.force:navigateToURL');
+              navEvt.setParams({url: '/'});
+              navEvt.fire();
+              return;
+          }
+          sessionStorage.setItem('customSearch--recordIds', JSON.stringify(objects));
           var navEvt = $A.get('e.force:navigateToURL');
           navEvt.setParams({url: '/custom-search-results'});
           navEvt.fire();
