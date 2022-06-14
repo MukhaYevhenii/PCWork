@@ -1,34 +1,49 @@
-<aura:component implements="force:hasRecordId" access="global">
-    <aura:attribute name="record" type="Object"/>
-    <aura:attribute name="simpleRecord" type="Object"/>
-    <aura:attribute name="recordError" type="String"/>
-    <div class="slds-page-header">
-        <div class="slds-page-header__row">
-          <div class="slds-page-header__col-title">
-            <div class="slds-media">
-              <div class="slds-media__figure">
-                    <img src="{!v.record.DisplayUrl}" height="40" width="40"/>
-              </div>
-              <div class="slds-media__body">
-                <div class="slds-page-header__name">
-                  <div class="slds-page-header__name-title">
-                    <h1>
-                      <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets"><a href="{! $Site.siteUrlPrefix + '/detail/' + v.record.Id}">{!v.record.Name}</a></span>
-                    </h1>
-                  </div>
-                </div>
-                <p class="slds-page-header__name-meta">{!v.record.Model__c} • {!v.record.Producer__c} • {!v.record.Family}</p>
+<aura:component implements="force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+  <aura:attribute name="record" type="Object"/>
+  <aura:attribute name="recordId" type="Object"/>
+  <aura:attribute name="simpleRecord" type="String"/>
+  <aura:attribute name="recordError" type="String"/>
+  <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+  <div class="container page-wrapper">
+    <div class="page-inner">
+      <div class="row">
+        <div class="el-wrapper">
+          <div class="box-up">
+            <div style="display: flex; justify-content: center">
+              <div class="item">
+                <img class="img" src="{!v.record.Product2.DisplayUrl}" alt="" />
               </div>
             </div>
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-name"><a style="color:black" href="{! $Site.siteUrlPrefix + '/detail/' + v.record.Product2.Id}">{!v.record.Product2.Name}</a></span>
+                <span class="p-company">{!v.record.Product2.Producer__c}</span>
+              </div>
+              <div class="a-size"><span class="size">{!v.record.Product2.Family} , {!v.record.Product2.Model__c} </span></div>
+            </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+            <a class="cart" href="#">
+              <span class="price">€ {!v.record.UnitPrice}</span>
+              <span class="add-to-cart">
+                <span class="txt">{!$Label.c.MS_Add_to_cart}</span>
+              </span>
+            </a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-    <aura:if isTrue="{!not(empty(v.recordError))}">
-      <div class="recordError">
-        <ui:message title="Error" severity="error" closable="true">
-          {!v.recordError}
-        </ui:message>
-      </div>
-    </aura:if>
+  <aura:if isTrue="{!not(empty(v.recordError))}">
+    <div class="recordError">
+      <ui:message title="Error" severity="error" closable="true">
+        {!v.recordError}
+      </ui:message>
+    </div>
+  </aura:if>
 </aura:component>

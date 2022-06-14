@@ -1,11 +1,17 @@
 ({
     init: function(component, event, helper) {
-      var idsJson = sessionStorage.getItem('customSearch--recordIds');
+      let idsJson = sessionStorage.getItem('customSearch--recordIds');
       if (!$A.util.isUndefinedOrNull(idsJson)) {
-        var ids = JSON.parse(idsJson);
-        console.log(ids);
+        let ids = JSON.parse(idsJson);
         component.set('v.recordIds', ids);
         sessionStorage.removeItem('customSearch--recordIds');
       }
+    },
+    
+    handleChanged: function(cmp, message, helper) {
+      if (message != null && message.getParam('recordData') != null) {
+          let objects = message.getParam('recordData').value;
+          cmp.set('v.recordIds', objects);
+      }
     }
-  })
+})
