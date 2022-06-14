@@ -1,6 +1,6 @@
 {
   "definitionName" : "service:branding-service",
-  "id" : "024a0ccd-ccec-46ea-8dbe-8adcab46258c",
+  "id" : "b6adc373-e04c-4095-9b69-2ebf1fa635c8",
   "label" : "Customer Service",
   "type" : "brandingSet",
   "values" : {
@@ -13,7 +13,7 @@
     "HeaderFonts" : "Montserrat",
     "HeaderImage" : "/file-asset/logopart2?v=1",
     "LinkColor" : "#2574A9",
-    "LoginBackgroundColor" : "rgb(255, 255, 255)",
+    "LoginBackgroundColor" : "#F4F4F4",
     "LoginBackgroundImage" : "/file-asset/alesnesetrilIm7lZjxeLhgunsplash1?v=1",
     "OverlayTextColor" : "#FFFFFF",
     "PageBackgroundColor" : "#FFFFFF",
@@ -59,7 +59,7 @@
     "_desktopFontSizeXxLarge" : "1.75rem",
     "_desktopLineHeightText" : "1.5",
     "_desktopSquareIconMedium" : "2rem",
-    "brandNavigationBackgroundColor" : "rgb(60, 53, 53)",
+    "brandNavigationBackgroundColor" : "rgb(128,128,128)",
     "brandNavigationBarBackgroundColor" : "rgba(128,128,128,.75)",
     "brandNavigationColorText" : "#FFFFFF"
   }

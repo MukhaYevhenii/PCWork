@@ -18,6 +18,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PW_CustomSearchCommunityController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_CustomSearchCommunityControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PW_CustomSearchPricebook</apexClass>
         <enabled>false</enabled>
     </classAccesses>

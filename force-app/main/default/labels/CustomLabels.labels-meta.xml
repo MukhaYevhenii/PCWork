@@ -427,4 +427,46 @@
         <shortDescription>MS_Start_date</shortDescription>
         <value>Start date</value>
     </labels>
+    <labels>
+        <fullName>MS_Add_to_cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Add_to_cart</shortDescription>
+        <value>Add in cart</value>
+    </labels>
+    <labels>
+        <fullName>MS_Filter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Filter</shortDescription>
+        <value>Filters</value>
+    </labels>
+    <labels>
+        <fullName>MS_No_record</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_No_record</shortDescription>
+        <value>No record found</value>
+    </labels>
+    <labels>
+        <fullName>MS_Price_range</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Price_range</shortDescription>
+        <value>Price range</value>
+    </labels>
+    <labels>
+        <fullName>MS_Search_Result</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Search_Result</shortDescription>
+        <value>Search result</value>
+    </labels>
+    <labels>
+        <fullName>MS_Submit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
 </CustomLabels>
