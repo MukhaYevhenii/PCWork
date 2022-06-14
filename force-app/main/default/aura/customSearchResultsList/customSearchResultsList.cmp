@@ -1,0 +1,19 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute type="list" name="recordIds" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <lightning:messageChannel type="Products_List_Communicate__c" onMessage="{!c.handleChanged}" scope="APPLICATION"/>
+
+    <aura:if isTrue="{!not(empty(v.recordIds))}"> 
+      <h1>{!$Label.c.MS_Search_Result}</h1>
+      <div style="display: flex; flex-wrap: wrap;">
+        <aura:iteration items="{!v.recordIds}" var="recordObject">
+          <c:customSearchResultItem record="{!recordObject}" recordId="{!recordObject.Id}"/>
+        </aura:iteration>
+      </div>
+    </aura:if>
+    <aura:if isTrue="{!(empty(v.recordIds))}"> 
+      <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center">
+        <img style="max-height: 250px;" src="https://thelocalswpg.com/images/empty_item.svg" alt="" />
+      </div>
+    </aura:if>
+</aura:component>

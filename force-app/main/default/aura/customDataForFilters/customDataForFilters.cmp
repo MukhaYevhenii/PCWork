@@ -1,0 +1,7 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global">
+    <aura:attribute type="list" name="recordIds" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <lightning:messageChannel type="Products_List_Communicate__c"
+    aura:id="productsListCommunicate"/>
+    <c:filtersForCustomSearch onchangeproducts="{!c.handleLWCEvent}" listOfProducts="{!v.recordIds}" />
+</aura:component>

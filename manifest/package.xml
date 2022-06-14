@@ -4,6 +4,8 @@
 		<members>PW_ContentDistributionLinks</members>
 		<members>PW_ContentDistributionLinksTest</members>
 		<members>PW_ConverterDistributionPublicUrl</members>
+		<members>PW_CustomSearchCommunityController</members>
+		<members>PW_CustomSearchCommunityControllerTest</members>
 		<members>PW_CustomSearchPricebook</members>
 		<members>PW_CustomSearchPricebookTest</members>
 		<members>PW_CustomSearchProduct</members>
@@ -36,6 +38,10 @@
 	</types>
 	<types>
 		<members>createNewRecordComponent</members>
+		<members>customDataForFilters</members>
+		<members>customSearch</members>
+		<members>customSearchResultItem</members>
+		<members>customSearchResultsList</members>
 		<members>editProductComponent</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
@@ -52,6 +58,17 @@
 		<name>ContentAsset</name>
 	</types>
 	<types>
+		<members>Test1</members>
+		<members>test2</members>
+		<members>test3</members>
+		<members>test4</members>
+		<members>test5</members>
+		<members>test6</members>
+		<members>test7</members>
+		<members>test8</members>
+		<name>CspTrustedSite</name>
+	</types>
+	<types>
 		<members>PCWork</members>
 		<name>CustomApplication</name>
 	</types>
@@ -66,6 +83,7 @@
 	</types>
 	<types>
 		<members>MS</members>
+		<members>MS_Add_to_cart</members>
 		<members>MS_Advanced_Price_Label</members>
 		<members>MS_Available_Column</members>
 		<members>MS_Cancel_Button</members>
@@ -89,17 +107,20 @@
 		<members>MS_Fields_Empty</members>
 		<members>MS_File_Preview</members>
 		<members>MS_File_Upload_Success</members>
+		<members>MS_Filter</members>
 		<members>MS_Is_Active</members>
 		<members>MS_Label_Preview</members>
 		<members>MS_Model_Column</members>
 		<members>MS_Model_Placeholder</members>
 		<members>MS_New_Pricebook</members>
+		<members>MS_No_record</members>
 		<members>MS_Preview</members>
 		<members>MS_Price</members>
 		<members>MS_Price_Editing_Advanced</members>
 		<members>MS_Price_Greater</members>
 		<members>MS_Price_Update</members>
 		<members>MS_Price_Updated</members>
+		<members>MS_Price_range</members>
 		<members>MS_Pricebook_Created</members>
 		<members>MS_Pricebook_Name_Placeholder</members>
 		<members>MS_Pricebook_Not_Contain</members>
@@ -121,8 +142,10 @@
 		<members>MS_Save_Butt</members>
 		<members>MS_Search</members>
 		<members>MS_Search_Product</members>
+		<members>MS_Search_Result</members>
 		<members>MS_Select_Pricebook</members>
 		<members>MS_Start_date</members>
+		<members>MS_Submit</members>
 		<members>MS_Success</members>
 		<members>MS_Upload_Product_Images</members>
 		<members>MS_Upload_Success</members>
@@ -176,6 +199,7 @@
 		<members>createProductRecord</members>
 		<members>editProductRecord</members>
 		<members>filePreviewAndDownloads</members>
+		<members>filtersForCustomSearch</members>
 		<members>footerCompany</members>
 		<members>getRecentlyViewedProducts</members>
 		<members>previewFileModal</members>
@@ -192,6 +216,7 @@
 		<members>productFamilyPicklist</members>
 		<members>productModelInput</members>
 		<members>productNameInput</members>
+		<members>productPriceSlider</members>
 		<members>productProducerPicklist</members>
 		<members>productRecord</members>
 		<members>searchBox</members>
@@ -200,6 +225,7 @@
 		<name>LightningComponentBundle</name>
 	</types>
 	<types>
+		<members>Products_List_Communicate</members>
 		<members>Record_Select</members>
 		<name>LightningMessageChannel</name>
 	</types>
