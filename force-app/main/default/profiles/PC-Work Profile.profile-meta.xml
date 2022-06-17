@@ -14,10 +14,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>PW_ConverterDistributionPublicUrl</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>PW_CustomSearchCommunityController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -329,7 +325,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Producer__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
