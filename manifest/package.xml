@@ -3,7 +3,6 @@
 	<types>
 		<members>PW_ContentDistributionLinks</members>
 		<members>PW_ContentDistributionLinksTest</members>
-		<members>PW_ConverterDistributionPublicUrl</members>
 		<members>PW_CustomSearchCommunityController</members>
 		<members>PW_CustomSearchCommunityControllerTest</members>
 		<members>PW_CustomSearchPricebook</members>

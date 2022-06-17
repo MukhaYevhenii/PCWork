@@ -3,7 +3,7 @@ public with sharing class PW_GoogleAuthTest {
 
     @TestSetup
     public static void testSetup() {
-        Account ac = new Account(Name='GoogleAuth');
+        Account ac = new Account(Name='Test Account');
         insert ac;
     }
 
