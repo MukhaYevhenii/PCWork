@@ -4,6 +4,7 @@ import getStandardPriceProduct from '@salesforce/apex/PW_EditRecordController.ge
 import updateStandardPrice from '@salesforce/apex/PW_EditRecordController.updateStandardPrice';
 import getRelatedFilesByRecordId from '@salesforce/apex/PW_FilePreviewAndDownloadController.getRelatedFilesByRecordId';
 import deleteContentDocument from '@salesforce/apex/PW_FilePreviewAndDownloadController.deleteContentDocument';
+import getContentDownloadUrl from '@salesforce/apex/PW_ContentDistributionLinks.getContentDownloadUrl';
 import updateDisplayURL from '@salesforce/apex/PW_FilePreviewAndDownloadController.updateDisplayURL';
 import { refreshApex } from "@salesforce/apex";
 import { getRecord, getFieldValue} from 'lightning/uiRecordApi';
@@ -73,26 +74,45 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
 
     @wire(getRelatedFilesByRecordId, {recordId: '$Id'})
     wiredResult(result){ 
-        const { data, error } = result;
-        this.wiredActivities = result;
-        if(data){
-            this.filesList = Object.keys(data).map(item=>({"label":data[item].Title,
-             "value": data[item].ContentDocumentId,
-             "imageurl":`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`,
-             "fileextension": data[item].FileExtension,
-             "isProfileImage": this.isProfileImageCheck(`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`)
-            }))
-        }
-        if(error){ 
-            this.dispatchEvent(
-                new ShowToastEvent({
-                    title: MS_Error_Load_File,
-                    message: error.body.message,
-                    variant: 'error',
-                }),
-            );
-        }
-    }
+       const { data, error } = result;
+       this.wiredActivities = result;
+       if(data){ 
+           Promise.all( Object.keys(data).map( async item=>{
+               this.contentVersionId = data[item].Id;
+               const publicUrl = await this.displayUrlConverted();
+               const temp =  {
+                   "label":data[item].Title,
+                    "value": data[item].ContentDocumentId,
+                    "converturl":  publicUrl,
+                    "imageurl":`/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=${data[item].Id}&operationContext=CHATTER&contentId=${data[item].ContentDocumentId}`,
+                    "fileextension": data[item].FileExtension,
+                    "isProfileImage": this.isProfileImageCheck(publicUrl)
+                   }
+                   return temp;
+            })).then((result) => {
+               this.filesList = result;
+            })
+       }
+       if(error){ 
+           this.dispatchEvent(
+               new ShowToastEvent({
+                   title: MS_Error_Load_File,
+                   message: error.body.message,
+                   variant: 'error',
+               }),
+           );
+       }
+   }
+
+   displayUrlConverted(){
+       return new Promise( (resolutionFunc,rejectionFunc) => {
+           getContentDownloadUrl({contentVersionId: this.contentVersionId})
+           .then(result => {
+               resolutionFunc(result);
+           });
+       }); 
+   }
+   
 
     @wire(getRecord, { recordId: '$Id', fields })
     product;
@@ -137,7 +157,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
         .then(result => {
             refreshApex(this.wiredActivities);
             if(url == this.displayurl){
-                updateDisplayURL({ recordId: this.Id, url: ''})
+                updateDisplayURL({ recordId: this.Id, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'})
                 .then(result => {
                     refreshApex(this.wiredActivities);
                 })
@@ -182,7 +202,7 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
                 );
             });
         } else {
-            updateDisplayURL({ recordId: this.Id, url: ''})
+            updateDisplayURL({ recordId: this.Id, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'})
             .then(result => {
                 refreshApex(this.wiredActivities);
             })
@@ -203,6 +223,9 @@ export default class EditProductRecord extends NavigationMixin(LightningElement)
     }
 
     closeModal() {
+        if(this.displayurl == null){
+            updateDisplayURL({ recordId: this.Id, url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png'});
+        }
         this.isModalOpen = false;
         setTimeout(()=>{
             this.closeQuickAction();

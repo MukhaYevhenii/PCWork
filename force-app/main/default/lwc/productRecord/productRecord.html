@@ -1,0 +1,40 @@
+<template>
+    <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <div style="display: flex; justify-content: center">
+                  <div class="item">
+                    <img class="img" src={productRecord.DisplayUrl} alt="" />
+                  </div>
+                </div>
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name"><a style="color:black">{productRecord.Name}</a></span>
+                    <span class="p-company">{productRecord.Producer__c}</span>
+                  </div>
+                  <div class="a-size"><span class="size">{productRecord.Family}</span></div>
+                </div>
+              </div>
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+                <a class="cart" href="#">
+                  <template if:true={usingPrice}>
+                    <span class="price">€ {productRecord.UnitPrice}</span>
+                  </template>
+                  <template if:false={usingPrice}>
+                    <span class="price">{productRecord.UnitPrice}</span>
+                  </template>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in cart</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</template>

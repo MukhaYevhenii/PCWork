@@ -1,0 +1,29 @@
+<template>
+    <template if:true={modalTemplateOpen}>
+        <c-pricebook-products-edit products-list={selectedRows} ongetupdatedprices={handleUpdatePrices} ongetmodalvalue={handleChangeModalOpen}></c-pricebook-products-edit>
+    </template>
+
+    <template if:true={pricebooksProduct.length}>
+        <div style="display: flex; justify-content:right;">
+            <div style="max-width: 40%;">
+                <lightning-button label="Advanced price editing" onclick={openEditPriceModal} disabled={disableBool}></lightning-button>
+            </div>
+        </div>
+      
+        <div class="slds-scrollable_y" style="height: 17vh; margin-top: 5px;" >
+            <lightning-datatable key-field="Id" columns={column} 
+            default-sort-direction={defaultSortDirection}
+            sorted-direction={sortDirection}
+            sorted-by={sortedBy}
+            onsort={onHandleSort}
+            data={pricebooksProduct}  
+            onrowselection={handleSelected}
+            onsave={saveHandleAction} 
+            draft-values={fldsItemValues}></lightning-datatable>
+        </div>
+    </template>
+
+    <template if:false={pricebooksProduct.length}>
+        <span class="slds-align_absolute-center no-boat-height" style="font-size: 14px;">{label.MS_Pricebook_Not_Contain}</span>
+    </template>
+</template>

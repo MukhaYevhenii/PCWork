@@ -1,0 +1,18 @@
+{
+  "forgotPasswordRouteId" : "a1240605-5fe6-4082-8423-b7605b04be35",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "5a7ec0f7-92cd-4f24-b888-5b95e8e4171f",
+  "mainAppPageId" : "b0dd2247-1c2c-44a6-9235-28d36189b315",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "a4526107-06c5-4cce-bd7d-9aaf791f0287",
+  "trustedSitesForScript" : [ {
+    "id" : "2f36c8b3-05ef-4ed3-a6ee-f711a86323d4",
+    "isActive" : true,
+    "trustedSiteName" : "Britenet",
+    "trustedSiteUrl" : "https://britenet-e-dev-ed.my.salesforce.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

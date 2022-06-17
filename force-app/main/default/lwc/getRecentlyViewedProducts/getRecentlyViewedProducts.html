@@ -1,0 +1,36 @@
+<template>
+    <template if:true={recentlyProductsList.length}>
+        <div class="spinner">
+            <template if:true={isLoading}>
+                 <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                 </lightning-spinner>
+            </template>
+        </div>
+        <div style="margin-top: 5%; margin-bottom: 5%;">
+            <h1 style="font-size: 20px; text-align:center;">Recently viewed</h1>
+            <div style="max-height:350px; display:flex; justify-content: space-evenly;">
+                <div style="position: relative; display: flex; justify-content: left; align-items:center">
+                    <lightning-button-icon
+                        icon-name="utility:back"
+                        onclick={handlePreviousChangeOffset}
+                        size="large"
+                        variant="bare"
+                        disabled={isFirstPage}>
+                    </lightning-button-icon>
+                </div>
+                <template for:each={recentlyProductsList} for:item="product">
+                    <c-product-record product-record={product} key={product.Id} > </c-product-record>
+                </template>
+                <div style="position: relative; display: flex; justify-content: right; align-items:center">
+                    <lightning-button-icon
+                        icon-name="utility:forward"
+                        onclick={handleNextChangeOffset}
+                        size="large"
+                        variant="bare"
+                        disabled={isLastPage}>
+                    </lightning-button-icon>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>
