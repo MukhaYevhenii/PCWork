@@ -1,6 +1,6 @@
 {
   "appPageId" : "b0dd2247-1c2c-44a6-9235-28d36189b315",
-  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "componentName" : "siteforce:sldsOneColLayout",
   "id" : "f4b5279f-472f-4316-9db4-930be03c5db4",
   "label" : "Home",
   "regions" : [ {
@@ -24,6 +24,13 @@
       "componentAttributes" : { },
       "componentName" : "c:contentSlider",
       "id" : "3cb9a8a8-6580-497c-9af0-81e49b198373",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:getRecentlyViewedProducts",
+      "id" : "f1e92907-040e-4b2a-91d6-474bf57388ec",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
