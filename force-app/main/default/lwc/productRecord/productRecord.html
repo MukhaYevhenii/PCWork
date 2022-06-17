@@ -1,12 +1,40 @@
 <template>
-    <div style="display:flex; min-height: 240px;flex-direction: column;">
-        <div style="margin: auto; max-width: 220px; max-height: 155px">
-            <img width="220" style="width:100%; max-width: 220px; height:100%; max-height: 155px;" height="155" src={productRecord.DisplayUrl} />
+    <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <div style="display: flex; justify-content: center">
+                  <div class="item">
+                    <img class="img" src={productRecord.DisplayUrl} alt="" />
+                  </div>
+                </div>
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name"><a style="color:black">{productRecord.Name}</a></span>
+                    <span class="p-company">{productRecord.Producer__c}</span>
+                  </div>
+                  <div class="a-size"><span class="size">{productRecord.Family}</span></div>
+                </div>
+              </div>
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+                <a class="cart" href="#">
+                  <template if:true={usingPrice}>
+                    <span class="price">€ {productRecord.UnitPrice}</span>
+                  </template>
+                  <template if:false={usingPrice}>
+                    <span class="price">{productRecord.UnitPrice}</span>
+                  </template>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in cart</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div style="display: flex;justify-content: center; flex-direction: column">
-            <h6 style="font-size: 11px; text-align:center">{productRecord.Family}</h6>
-            <h3 style="font-size: 14px; text-align:center">{productRecord.Name}</h3>
-            <h3 style="font-weight: bold; font-size: 14px; text-align:center">€{productRecord.UnitPrice}</h3>
-        </div>
-    </div>
+      </div>
 </template>

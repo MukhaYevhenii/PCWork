@@ -5,7 +5,9 @@
       <div class="slds-form-element__control">
         <div class="slds-input-has-icon slds-input-has-icon--right">
           <lightning:buttonIcon iconName="utility:search" variant="bare" onclick="{! c.handleClick }" alternativeText="{!$Label.c.MS_Search}" class="slds-input__icon" />
-          <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="{!$Label.c.MS_Search}" />
+          <span onkeypress="{!c.keyCheck}" class="slds-size--11-of-12">
+            <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="{!$Label.c.MS_Search}" />
+          </span>
         </div>
       </div>
     </div>
