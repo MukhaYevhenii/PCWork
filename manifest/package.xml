@@ -414,11 +414,6 @@
 		<name>NetworkBranding</name>
 	</types>
 	<types>
-		<members>C2CHeadlessCMSAccessPermSet</members>
-		<members>Experience_Profile_Manager</members>
-		<name>PermissionSet</name>
-	</types>
-	<types>
 		<members>Community Customer</members>
 		<members>Customer Community Login User</members>
 		<members>Customer Community Plus Login User</members>
