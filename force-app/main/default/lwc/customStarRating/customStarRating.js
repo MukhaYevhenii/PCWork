@@ -317,6 +317,7 @@ export default class StarRating extends LightningElement {
                 }
             })
         );
+        
     }
 
     setColor() {

@@ -22,7 +22,7 @@ import MS_In_Strore from '@salesforce/label/c.MS_In_Strore';
 import MS_Not_Available from '@salesforce/label/c.MS_Not_Available';
 import MS_Category from '@salesforce/label/c.MS_Category';
 import MS_Product_Code_Placeholder from '@salesforce/label/c.MS_Product_Code_Placeholder';
-import MS_Add_To_Cart from '@salesforce/label/c.MS_Add_To_Cart';
+import MS_Add_To_Cart from '@salesforce/label/c.MS_Add_to_cart';
 
 const fields = [NAME_FIELD, PRODUCER_FIELD, PRODUCTCODE_FIELD, PRODUCTFAMILY_FIELD, MODEL_FIELD, DESCRIPTION_FIELD, AVAILABLE_FIELD];
 

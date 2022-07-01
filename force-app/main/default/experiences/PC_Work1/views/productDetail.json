@@ -1,0 +1,101 @@
+{
+  "appPageId" : "b0dd2247-1c2c-44a6-9235-28d36189b315",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "613a5abe-6e4d-46dc-bfef-a438371d0cfa",
+  "label" : "Product Detail",
+  "regions" : [ {
+    "id" : "63d8ba3a-b4e3-4d2b-97cb-2950778310c4",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:productCommunityDetailPage",
+      "id" : "2f52990d-3092-40fb-a6f6-95a5666ede68",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f3ff4dd9-4a08-4f04-9196-e87deefde63d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "e2a8f02b-d34f-4aa4-a763-b57f58382f91",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "c5d3b3e0-b38c-41af-9fc6-3817ef8deb70",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Review"
+          }, {
+            "UUID" : "72893f11-a528-47d3-a4a3-c5b65f030b8c",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Recently Viewed"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "e2a8f02b-d34f-4aa4-a763-b57f58382f91",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:customReviewComments",
+          "id" : "bf08d495-29f9-4b4a-8762-9fae40cfa554",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c5d3b3e0-b38c-41af-9fc6-3817ef8deb70",
+        "regionLabel" : "Review",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:getRecentlyViewedProducts",
+          "id" : "8e333b33-1d78-4b74-9590-a453dd50d987",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "72893f11-a528-47d3-a4a3-c5b65f030b8c",
+        "regionLabel" : "Recently Viewed",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3ca12f87-70f2-41cf-b2c3-c22f6b60b376",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0759622f-2d76-4fa3-b3ee-69daa88c42e7",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "92b49c92-9ad9-4c80-906c-3743623038f0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-01t"
+}
