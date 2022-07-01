@@ -1,0 +1,11 @@
+Hello!
+This review waiting for approve.
+Rating(1-5):
+{!Product_Review__c.Rating__c}
+Comment Title:
+{!Product_Review__c.Name}
+Comment:
+{!Product_Review__c.Comment__c}
+
+To approve or reject simply respond to this email with 'approve' or 'reject' or click here to approve within Salesforce
+{!ApprovalRequest.External_URL}

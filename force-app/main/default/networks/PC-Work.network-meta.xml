@@ -27,19 +27,11 @@
     <enableUpDownVote>false</enableUpDownVote>
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
-    <networkMemberGroups>
-        <permissionSet>C2CHeadlessCMSAccessPermSet</permissionSet>
-        <permissionSet>Experience_Profile_Manager</permissionSet>
-        <profile>admin</profile>
-        <profile>Community Customer</profile>
-        <profile>standard</profile>
-    </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
         <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>
         <homePageOverrideSetting>Designer</homePageOverrideSetting>
         <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
-        <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
     <picassoSite>PC_Work1</picassoSite>
     <selfRegistration>true</selfRegistration>

@@ -327,6 +327,10 @@
 		<name>DuplicateRule</name>
 	</types>
 	<types>
+		<members>unfiled$public/Product_Review_Accepted</members>
+		<name>EmailTemplate</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>ExperienceBundle</name>
 	</types>
@@ -410,6 +414,7 @@
 		<name>NetworkBranding</name>
 	</types>
 	<types>
+		<members>C2CHeadlessCMSAccessPermSet</members>
 		<members>Experience_Profile_Manager</members>
 		<name>PermissionSet</name>
 	</types>
@@ -453,6 +458,14 @@
 		<members>Product2.New_Action</members>
 		<members>Product2.New_Butt</members>
 		<name>WebLink</name>
+	</types>
+	<types>
+		<members>Product_Review__c</members>
+		<name>Workflow</name>
+	</types>
+	<types>
+		<members>Product_Review__c.Update_field_To_Approve</members>
+		<name>WorkflowFieldUpdate</name>
 	</types>
 	<version>53.0</version>
 </Package>
