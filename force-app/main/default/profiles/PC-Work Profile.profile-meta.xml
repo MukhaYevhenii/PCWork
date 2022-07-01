@@ -7,7 +7,7 @@
     </applicationVisibilities>
     <classAccesses>
         <apexClass>PW_ContentDistributionLinks</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_ContentDistributionLinksTest</apexClass>
@@ -23,7 +23,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchPricebook</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchPricebookTest</apexClass>
@@ -31,7 +31,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchProduct</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchProductTest</apexClass>
@@ -39,7 +39,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_EditRecordController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_EditRecordControllerTest</apexClass>
@@ -47,7 +47,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FileController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FileControllerTest</apexClass>
@@ -55,7 +55,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FilePreviewAndDownloadController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FilePreviewAndDownloadControllerTest</apexClass>
@@ -63,7 +63,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GetProductsFromPricebook</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GetProductsFromPricebookTest</apexClass>
@@ -71,7 +71,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GoogleAuth</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GoogleAuthTest</apexClass>
@@ -79,10 +79,18 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_NewPricebookController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_NewPricebookControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_ProductPage</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_ProductPageTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -95,7 +103,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_RecentlyViewedProducts</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_RecentlyViewedProductsTest</apexClass>
@@ -290,7 +298,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Available__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -320,7 +328,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Model__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -340,13 +348,42 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Rating__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.StockKeepingUnit</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product_Review__c.AcceptReview__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product_Review__c.Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product_Review__c.Product__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.DB_Region__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.PhotoUrl__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Procces_Builder_Approve_Review</flow>
+    </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>checkActivePricebooks</flow>
@@ -381,6 +418,10 @@
     </objectPermissions>
     <tabVisibilities>
         <tab>Pricebook_manager</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Product_Review__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

@@ -42,6 +42,7 @@ global void updateUser(Id userId, Id portalId, Auth.UserData data){
     u.email = data.email;
     u.lastName = data.lastName;
     u.firstName = data.firstName;
+    u.PhotoUrl__c = data.attributeMap.get('picture');
     update(u);
 }
 }

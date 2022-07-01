@@ -1,0 +1,59 @@
+<template>
+    <div class="spinner">
+        <template if:true={isLoading}>
+             <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+             </lightning-spinner>
+        </template>
+    </div>
+    <template if:true={isModalOpen}>
+        <c-custom-review-edit onclosed={handleCloseEditModal} onupdatedreview={handleRefreshApexEvent} product-review={productReview}></c-custom-review-edit>
+    </template>
+
+    <li class="slds-feed__item">
+        <article class="slds-post">
+            <header class="slds-post__header slds-media">
+                <div class="slds-media__figure">
+                    <template if:true={productReview.CreatedBy.PhotoUrl__c}>
+                        <lightning-avatar variant="circle"  src={productReview.CreatedBy.PhotoUrl__c}></lightning-avatar>
+                    </template>
+                    <template if:false={productReview.CreatedBy.PhotoUrl__c}>
+                        <lightning-avatar variant="circle" src={productReview.CreatedBy.SmallPhotoUrl}></lightning-avatar>
+                    </template>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate" style="display: flex; align-items: center;">
+                        <p>
+                            <a title={productReview.CreatedBy.Name} onclick={navigateToRecord} data-record-id={productReview.CreatedBy.Id}>
+                                {productReview.CreatedBy.Name}
+                            </a>
+                        </p>
+                        <div if:true={deleteIcon} style="padding-right: 8%;">
+                            <lightning-button-icon icon-name="utility:edit" alternative-text="Edit" onclick={handleOpenEditModal} class="slds-m-left_xx-small" title="Edit"></lightning-button-icon>
+                            <lightning-button-icon icon-name="utility:delete" onclick={handleDeleteReview} alternative-text="Delete" class="slds-m-left_xx-small" title="Delete"></lightning-button-icon>
+                        </div>
+                    </div>
+                    <p class="slds-text-body_small" style="display:flex; flex-direction:row; align-items:center; ">
+                        <c-custom-star-rating color-positive="#fdd500"
+                            style="margin-left:-1.3%;"
+                            color-default="#fdd500"
+                            color-ok="#fdd500"
+                            rating={productReview.Rating__c}
+                            read-only-star="true"
+                            color-negative="#fdd500" 
+                            space-between="none" 
+                            number-of-stars="5" 
+                            size="xsmall">
+                        </c-custom-star-rating>
+                        <lightning-formatted-date-time value={productReview.LastModifiedDate}></lightning-formatted-date-time>
+                    </p>
+                </div>
+            </header>
+            <div class="slds-text-longform">
+                <p class="slds-text-title_caps">
+                    {productReview.Name}
+                </p>
+                <lightning-formatted-rich-text value={productReview.Comment__c}></lightning-formatted-rich-text>                                
+            </div>
+    </article>
+</li>
+</template>

@@ -13,9 +13,13 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Product2</tabs>
     <tabs>Search_Product</tabs>
+    <tabs>Product_Review__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>PCWork_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Product_Review__c</tab>
+        </mappings>
         <mappings>
             <tab>Search_Product</tab>
         </mappings>
