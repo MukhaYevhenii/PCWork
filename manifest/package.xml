@@ -79,6 +79,10 @@
 		<members>Product2.Model__c</members>
 		<members>Product2.Producer__c</members>
 		<members>Product2.Rating__c</members>
+		<members>Product_Review__c.AcceptReview__c</members>
+		<members>Product_Review__c.Comment__c</members>
+		<members>Product_Review__c.Product__c</members>
+		<members>Product_Review__c.Rating__c</members>
 		<members>User.PhotoUrl__c</members>
 		<name>CustomField</name>
 	</types>

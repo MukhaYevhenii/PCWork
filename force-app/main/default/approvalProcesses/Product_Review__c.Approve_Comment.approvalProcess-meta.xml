@@ -7,7 +7,7 @@
         <type>role</type>
     </allowedSubmitters>
     <allowedSubmitters>
-        <submitter>yevhenii.mukha@britenet.com.pl</submitter>
+        <submitter>yevhenii.mukha@gmail.com</submitter>
         <type>user</type>
     </allowedSubmitters>
     <approvalPageFields>
@@ -24,7 +24,7 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>yevhenii.mukha@britenet.com.pl</name>
+                <name>yevhenii.mukha@gmail.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
