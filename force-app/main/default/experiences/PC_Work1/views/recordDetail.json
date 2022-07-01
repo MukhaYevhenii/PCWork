@@ -10,13 +10,6 @@
   }, {
     "components" : [ {
       "componentAttributes" : { },
-      "componentName" : "c:customProductDetailNavBar",
-      "id" : "51fc915e-54ad-457d-989a-e0e17eb94d57",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : { },
       "componentName" : "c:productCommunityDetailPage",
       "id" : "204e6053-a840-42bc-b5ef-13ad4403daa9",
       "renderPriority" : "NEUTRAL",
