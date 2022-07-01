@@ -1,0 +1,10 @@
+.container {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+}

@@ -21,6 +21,8 @@
 		<members>PW_GoogleAuthTest</members>
 		<members>PW_NewPricebookController</members>
 		<members>PW_NewPricebookControllerTest</members>
+		<members>PW_ProductPage</members>
+		<members>PW_ProductPageTest</members>
 		<members>PW_ProductsContentPage</members>
 		<members>PW_ProductsContentPageTest</members>
 		<members>PW_RecentlyViewedProducts</members>
@@ -36,12 +38,18 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>ApprovalProcess</name>
+	</types>
+	<types>
 		<members>createNewRecordComponent</members>
 		<members>customDataForFilters</members>
+		<members>customReviewComments</members>
 		<members>customSearch</members>
 		<members>customSearchResultItem</members>
 		<members>customSearchResultsList</members>
 		<members>editProductComponent</members>
+		<members>productCommunityDetailPage</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
@@ -57,14 +65,7 @@
 		<name>ContentAsset</name>
 	</types>
 	<types>
-		<members>Test1</members>
-		<members>test2</members>
-		<members>test3</members>
-		<members>test4</members>
-		<members>test5</members>
-		<members>test6</members>
-		<members>test7</members>
-		<members>test8</members>
+		<members>*</members>
 		<name>CspTrustedSite</name>
 	</types>
 	<types>
@@ -81,17 +82,135 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Add_Review</members>
+		<members>All_records_found</members>
+		<members>City</members>
+		<members>City_button</members>
+		<members>Clear_button</members>
+		<members>Contract_doctor_error</members>
+		<members>Country</members>
+		<members>Countryy</members>
+		<members>Csv_warning</members>
+		<members>Deselect_all_button</members>
+		<members>Details</members>
+		<members>Email</members>
+		<members>First_Name</members>
+		<members>First_button</members>
+		<members>Full_Address</members>
+		<members>Full_Details</members>
+		<members>Full_Name</members>
+		<members>HP_Active</members>
+		<members>HP_All_records_found</members>
+		<members>HP_City</members>
+		<members>HP_Clear_button</members>
+		<members>HP_Contract_doctor_error</members>
+		<members>HP_Country</members>
+		<members>HP_Create_Doctor</members>
+		<members>HP_Csv_warning</members>
+		<members>HP_Current_user</members>
+		<members>HP_Deselect_all_button</members>
+		<members>HP_Email</members>
+		<members>HP_Error</members>
+		<members>HP_ExternalDoctor_City_toast</members>
+		<members>HP_ExternalDoctor_Country_toast</members>
+		<members>HP_ExternalDoctor_FieldRequired_toast</members>
+		<members>HP_ExternalDoctor_Nationality_toast</members>
+		<members>HP_ExternalDoctor_Phone_toast</members>
+		<members>HP_ExternalDoctor_Postal_toast</members>
+		<members>HP_ExternalDoctor_Speciality_toast</members>
+		<members>HP_ExternalDoctor_Street_toast</members>
+		<members>HP_ExternalDoctor_Success_toast</members>
+		<members>HP_First_Name</members>
+		<members>HP_First_button</members>
+		<members>HP_Free_Licenses</members>
+		<members>HP_Full_Address</members>
+		<members>HP_Full_Name</members>
+		<members>HP_Hosp_add</members>
+		<members>HP_Import_data</members>
+		<members>HP_Import_doctors</members>
+		<members>HP_Inactive</members>
+		<members>HP_Invert_button</members>
+		<members>HP_Last_button</members>
+		<members>HP_Last_login</members>
+		<members>HP_Last_name</members>
+		<members>HP_License</members>
+		<members>HP_License_Number</members>
+		<members>HP_Nationality</members>
+		<members>HP_Next_button</members>
+		<members>HP_Not_selected_for_import</members>
+		<members>HP_Previous_button</members>
+		<members>HP_Read_file</members>
+		<members>HP_Records</members>
+		<members>HP_Records_error</members>
+		<members>HP_Records_of</members>
+		<members>HP_SOAP_Success</members>
+		<members>HP_Search_Doctors</members>
+		<members>HP_Search_Result</members>
+		<members>HP_Search_button</members>
+		<members>HP_Select_all_button</members>
+		<members>HP_Speciality</members>
+		<members>HP_Status</members>
+		<members>HP_Street</members>
+		<members>HP_Success</members>
+		<members>HP_Total_Licenses</members>
+		<members>HP_Update_button</members>
+		<members>HP_Used_Licenses</members>
+		<members>HP_Username</members>
+		<members>HP_Users</members>
+		<members>HP_View</members>
+		<members>HP_action</members>
+		<members>HP_add_doc_button</members>
+		<members>HP_add_doctor</members>
+		<members>HP_address</members>
+		<members>HP_ambulances</members>
+		<members>HP_cancel</members>
+		<members>HP_con_detail</members>
+		<members>HP_count_page</members>
+		<members>HP_count_trigger</members>
+		<members>HP_deactive</members>
+		<members>HP_del</members>
+		<members>HP_doctor_add_error</members>
+		<members>HP_edit</members>
+		<members>HP_fax</members>
+		<members>HP_general</members>
+		<members>HP_hosp_name</members>
+		<members>HP_name</members>
+		<members>HP_on_page</members>
+		<members>HP_page_trigger</members>
+		<members>HP_phone</members>
+		<members>HP_postal_code</members>
+		<members>HP_record_not_found</members>
+		<members>HP_save</members>
+		<members>HP_timezone</members>
+		<members>HP_user_activated</members>
+		<members>HP_user_deactivated</members>
+		<members>HP_user_id</members>
+		<members>HP_user_ip</members>
+		<members>HP_user_not_activated</members>
+		<members>HP_user_not_deactivated</members>
+		<members>Hp_City_button</members>
+		<members>Import_data</members>
+		<members>Import_doctors</members>
+		<members>Invert_buttont</members>
+		<members>Last_Name</members>
+		<members>Last_button</members>
+		<members>License_Number</members>
 		<members>MS</members>
+		<members>MS_About_Item</members>
 		<members>MS_Add_to_cart</members>
+		<members>MS_Admin</members>
+		<members>MS_Administrator_Check</members>
 		<members>MS_Advanced_Price_Label</members>
 		<members>MS_Available_Column</members>
 		<members>MS_Cancel_Button</members>
+		<members>MS_Category</members>
 		<members>MS_Clear</members>
 		<members>MS_Close_Butt</members>
 		<members>MS_Created_Pricebook_Done</members>
 		<members>MS_Delete</members>
 		<members>MS_Edit_By_Euro</members>
 		<members>MS_Edit_By_Percent</members>
+		<members>MS_Edit_Label</members>
 		<members>MS_End_Date_Placeholder</members>
 		<members>MS_Error</members>
 		<members>MS_Error_Delete_File</members>
@@ -107,18 +226,21 @@
 		<members>MS_File_Preview</members>
 		<members>MS_File_Upload_Success</members>
 		<members>MS_Filter</members>
+		<members>MS_In_Strore</members>
 		<members>MS_Is_Active</members>
 		<members>MS_Label_Preview</members>
 		<members>MS_Model_Column</members>
 		<members>MS_Model_Placeholder</members>
 		<members>MS_New_Pricebook</members>
 		<members>MS_No_record</members>
+		<members>MS_Not_Available</members>
 		<members>MS_Preview</members>
 		<members>MS_Price</members>
 		<members>MS_Price_Editing_Advanced</members>
 		<members>MS_Price_Greater</members>
 		<members>MS_Price_Update</members>
 		<members>MS_Price_Updated</members>
+		<members>MS_Price_Without_Symbol</members>
 		<members>MS_Price_range</members>
 		<members>MS_Pricebook_Created</members>
 		<members>MS_Pricebook_Name_Placeholder</members>
@@ -135,7 +257,13 @@
 		<members>MS_Product_Name_Column</members>
 		<members>MS_Product_Update</members>
 		<members>MS_Product_Updated</members>
+		<members>MS_Rating</members>
 		<members>MS_Record_Not_Found</members>
+		<members>MS_Review_Check_By_Admin</members>
+		<members>MS_Review_Count</members>
+		<members>MS_Review_Created</members>
+		<members>MS_Review_Deleted</members>
+		<members>MS_Rights_Reserved</members>
 		<members>MS_SaveNew</members>
 		<members>MS_SaveNext</members>
 		<members>MS_Save_Butt</members>
@@ -146,14 +274,36 @@
 		<members>MS_Start_date</members>
 		<members>MS_Submit</members>
 		<members>MS_Success</members>
+		<members>MS_Updated_Review</members>
+		<members>MS_Updating_Review</members>
 		<members>MS_Upload_Product_Images</members>
 		<members>MS_Upload_Success</members>
+		<members>MS_User_Review</members>
+		<members>Next_button</members>
+		<members>Not_selected_for_import</members>
+		<members>Please_select_a_boat</members>
+		<members>Previous_button</members>
+		<members>Read_file</members>
+		<members>Records</members>
+		<members>Records_error</members>
+		<members>Records_of</members>
+		<members>Reviews</members>
+		<members>Search_Doctors</members>
+		<members>Search_Result</members>
+		<members>Search_button</members>
+		<members>Select_all_button</members>
+		<members>Status</members>
+		<members>Street</members>
+		<members>Success</members>
+		<members>View</members>
+		<members>on_page</members>
 		<name>CustomLabel</name>
 	</types>
 	<types>
 		<members>Account</members>
 		<members>Pricebook2</members>
 		<members>Product2</members>
+		<members>Product_Review__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
@@ -162,6 +312,7 @@
 	</types>
 	<types>
 		<members>Pricebook_manager</members>
+		<members>Product_Review__c</members>
 		<members>Search_Product</members>
 		<name>CustomTab</name>
 	</types>
@@ -193,9 +344,20 @@
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>communityFooter</members>
 		<members>contentSlider</members>
 		<members>createNewPricebook</members>
 		<members>createProductRecord</members>
+		<members>customClockReview</members>
+		<members>customCommunityProductDetailPage</members>
+		<members>customReviewEdit</members>
+		<members>customReviewForm</members>
+		<members>customReviewItem</members>
+		<members>customReviewPagination</members>
+		<members>customReviewPrint</members>
+		<members>customReviewTab</members>
+		<members>customStarRating</members>
+		<members>customSuccessPage</members>
 		<members>editProductRecord</members>
 		<members>filePreviewAndDownloads</members>
 		<members>filtersForCustomSearch</members>
@@ -230,6 +392,7 @@
 	</types>
 	<types>
 		<members>Product2.AllProducts</members>
+		<members>Product_Review__c.All</members>
 		<name>ListView</name>
 	</types>
 	<types>

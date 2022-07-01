@@ -1,0 +1,4 @@
+<template>
+    <c-custom-review-print record-id={productId} onchangestatusafterupdate={handleChangeStatusUpdate} onhasreviewfromitem={handleUserHasReview} ondeletereviewuser={handleUserDeleteReview} ></c-custom-review-print>
+    <c-custom-review-form record-id={productId} accepted-review={acceptedReview} oncreatereview={handleReviewCreated} has-user-review={hasUserReview} ></c-custom-review-form>
+</template>
