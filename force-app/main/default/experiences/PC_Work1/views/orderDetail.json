@@ -1,0 +1,108 @@
+{
+  "appPageId" : "b0dd2247-1c2c-44a6-9235-28d36189b315",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "c1f0d1b0-6788-43a4-a329-6948acfb945f",
+  "label" : "Order Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "67a0fe31-1001-4ae1-8ef5-2103d4cf1e64",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "17dc57b9-ff51-4824-8f4b-fd633ef4ccad",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "aad33a25-b3ce-475e-851e-e04f74eb22cb",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "b77ba774-dd26-46b9-a766-d1c4dce45c26",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "6a922fbd-78bc-4910-9fcd-f710a62fe8da",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Order Products & History"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "aad33a25-b3ce-475e-851e-e04f74eb22cb",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "9d85c0bc-f623-4a46-9f70-a29b78b7a829",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b77ba774-dd26-46b9-a766-d1c4dce45c26",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "722dc792-3eda-462d-8f0c-64158dbf132e",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6a922fbd-78bc-4910-9fcd-f710a62fe8da",
+        "regionLabel" : "Order Products & History",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a7a01c80-3e2e-4b2e-a497-892783e512d5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "43e2c0fe-0697-482e-91de-062caf206ab1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "12a46983-98a0-470a-b127-3865880eb696",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6ba37298-f279-4106-83c2-d42ceddf8dbd",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-801"
+}

@@ -28,6 +28,7 @@
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <networkMemberGroups>
+        <permissionSet>Experience_Profile_Manager</permissionSet>
         <profile>admin</profile>
         <profile>Community Customer</profile>
         <profile>standard</profile>

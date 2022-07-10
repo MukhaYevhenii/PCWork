@@ -1,0 +1,86 @@
+<template>
+  <div if:true={isModalOpen}>
+    <c-custom-confirm-modal content={label.MS_Place_Order} title={label.MS_Place_Order_Title} onclosemodal={handleCloseModal}></c-custom-confirm-modal>
+  </div>
+  <template if:true={isLoading}>
+    <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+    </lightning-spinner>
+  </template>
+  <div if:false={resultList.length} style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; ">
+    <img src="https://cdni.iconscout.com/illustration/free/thumb/empty-cart-4085814-3385483.png" alt="Shopping cart is empty"  />
+  </div>
+  <template if:true={resultList.length}>
+    <div class="title">
+      <h2>{label.MS_Product_Order}</h2>
+    </div>
+      <div class="container">
+        <div class="d-flex">
+          <lightning-record-edit-form
+            class="form"
+            object-api-name="Order"
+            onsubmit={handleSubmit}
+            onsuccess={handleSuccess}
+            >
+            <label>
+              <lightning-input label={label.MS_Full_Name} value={userName} disabled="true"></lightning-input>
+            </label>
+            <label>
+              <lightning-input label={label.MS_Email} value={userEmail} disabled="true"></lightning-input>
+            </label>
+            <label>
+              <lightning-input label={label.MS_Phone} value={userPhone} disabled="true"></lightning-input>
+            </label>
+            <label>
+              <lightning-input type="checkbox" label="Billing address like shipping" onchange={handleChangeCheckbox}></lightning-input>
+            </label>
+            <label>
+              <lightning-input-field field-name={shippingAddress} required="true" ></lightning-input-field>
+            </label>
+            <label>
+              <lightning-input-field field-name={billingAddress} disabled={disableShipping}></lightning-input-field>
+            </label>
+            <div style="display: flex;justify-content: center;">
+              <lightning-button class="button" label={label.MS_Place_Order_Butt} type="submit" variant="brand"></lightning-button>
+            </div>
+  
+          </lightning-record-edit-form>
+          <div class="Yorder">
+            <div style="min-width: 100%; border-bottom: 1px solid black;">
+              <span>{label.MS_Your_Order}</span>
+            </div>
+            <table>
+              <tr style="width: 100%;">
+                <template for:each={resultList} for:item="product" >
+                  <c-custom-order-page-item 
+                    record-id={product.Id} 
+                    price={product.price} 
+                    count={product.count} 
+                    key={product.Id}>
+                  </c-custom-order-page-item>
+                </template>
+              </tr>
+              </table>
+            <div style="display: flex; flex-direction: row; justify-content: space-between;border-bottom: 1px solid black; align-items: center;">
+              <span style="font-size: 18px ;">{label.MS_Total_Price}</span>
+              <span style="font-size: 18px;">€{totalPrice}</span>
+            </div>
+            <div>
+              <input type="radio" name="dbt" value="Bank Transfer" onchange={handleChangePayment} > {label.MS_Bank_Transfer}
+            </div>
+            <p>
+                {label.MS_Text_Bank_Transfer}
+            </p>
+            <div>
+              <input type="radio" name="dbt" value="Cash" checked onchange={handleChangePayment}> {label.MS_Cash}
+            </div>
+            <div>
+              <input type="radio" name="dbt" value="Card"  onchange={handleChangePayment}> {label.MS_Card} <span>
+              <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+              </span>
+            </div>
+          </div>
+         </div>
+        </div>
+  </template>
+  
+</template>
