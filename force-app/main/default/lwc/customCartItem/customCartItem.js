@@ -8,7 +8,7 @@ import PRODUCER_FIELD from '@salesforce/schema/Product2.Producer__c';
 import MODEL_FIELD from '@salesforce/schema/Product2.Model__c';
 import DESCRIPTION_FIELD from '@salesforce/schema/Product2.Description';
 import AVAILABLE_FIELD from '@salesforce/schema/Product2.Available__c';
-import DISPLAYURL from '@salesforce/schema/Product2.DisplayURl';
+import DISPLAYURL from '@salesforce/schema/Product2.DisplayUrl';
 
 import MS_Category from '@salesforce/label/c.MS_Category';
 import MS_Producer_Column from '@salesforce/label/c.MS_Producer_Column';

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>PW_CacheManage</members>
+		<members>PW_CacheManageTest</members>
 		<members>PW_ContentDistributionLinks</members>
 		<members>PW_ContentDistributionLinksTest</members>
 		<members>PW_CustomSearchCommunityController</members>
@@ -27,6 +29,7 @@
 		<members>PW_ProductsContentPageTest</members>
 		<members>PW_RecentlyViewedProducts</members>
 		<members>PW_RecentlyViewedProductsTest</members>
+		<members>PW_ShoppingCartWrapper</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -73,6 +76,7 @@
 		<name>CustomApplication</name>
 	</types>
 	<types>
+		<members>Order.Payment__c</members>
 		<members>Pricebook2.End_Date__c</members>
 		<members>Pricebook2.Start_Date__c</members>
 		<members>Product2.Available__c</members>
@@ -207,15 +211,25 @@
 		<members>MS_Administrator_Check</members>
 		<members>MS_Advanced_Price_Label</members>
 		<members>MS_Available_Column</members>
+		<members>MS_Bank_Transfer</members>
+		<members>MS_Butt_Details</members>
 		<members>MS_Cancel_Button</members>
+		<members>MS_Card</members>
+		<members>MS_Cash</members>
 		<members>MS_Category</members>
+		<members>MS_Checkout</members>
 		<members>MS_Clear</members>
 		<members>MS_Close_Butt</members>
+		<members>MS_Continue_Shopp</members>
 		<members>MS_Created_Pricebook_Done</members>
 		<members>MS_Delete</members>
+		<members>MS_Delete_Product</members>
+		<members>MS_Deleted_From_Cart</members>
+		<members>MS_Details_Price</members>
 		<members>MS_Edit_By_Euro</members>
 		<members>MS_Edit_By_Percent</members>
 		<members>MS_Edit_Label</members>
+		<members>MS_Email</members>
 		<members>MS_End_Date_Placeholder</members>
 		<members>MS_Error</members>
 		<members>MS_Error_Delete_File</members>
@@ -231,14 +245,28 @@
 		<members>MS_File_Preview</members>
 		<members>MS_File_Upload_Success</members>
 		<members>MS_Filter</members>
+		<members>MS_Full_Name</members>
+		<members>MS_Image_Column</members>
 		<members>MS_In_Strore</members>
 		<members>MS_Is_Active</members>
+		<members>MS_Items</members>
+		<members>MS_Items_In_cart</members>
 		<members>MS_Label_Preview</members>
 		<members>MS_Model_Column</members>
 		<members>MS_Model_Placeholder</members>
+		<members>MS_Name</members>
 		<members>MS_New_Pricebook</members>
 		<members>MS_No_record</members>
 		<members>MS_Not_Available</members>
+		<members>MS_Not_Found</members>
+		<members>MS_Ok</members>
+		<members>MS_Order</members>
+		<members>MS_Order_Created</members>
+		<members>MS_Order_History</members>
+		<members>MS_Phone</members>
+		<members>MS_Place_Order</members>
+		<members>MS_Place_Order_Butt</members>
+		<members>MS_Place_Order_Title</members>
 		<members>MS_Preview</members>
 		<members>MS_Price</members>
 		<members>MS_Price_Editing_Advanced</members>
@@ -260,10 +288,13 @@
 		<members>MS_Product_Family_Column</members>
 		<members>MS_Product_Name</members>
 		<members>MS_Product_Name_Column</members>
+		<members>MS_Product_Order</members>
 		<members>MS_Product_Update</members>
 		<members>MS_Product_Updated</members>
+		<members>MS_Quantity</members>
 		<members>MS_Rating</members>
 		<members>MS_Record_Not_Found</members>
+		<members>MS_Remove_Item</members>
 		<members>MS_Review_Check_By_Admin</members>
 		<members>MS_Review_Count</members>
 		<members>MS_Review_Created</members>
@@ -279,11 +310,19 @@
 		<members>MS_Start_date</members>
 		<members>MS_Submit</members>
 		<members>MS_Success</members>
+		<members>MS_Sure_To_Delete</members>
+		<members>MS_Text_Bank_Transfer</members>
+		<members>MS_Total_Amount</members>
+		<members>MS_Total_Amount_Small</members>
+		<members>MS_Total_Price</members>
 		<members>MS_Updated_Review</members>
 		<members>MS_Updating_Review</members>
 		<members>MS_Upload_Product_Images</members>
 		<members>MS_Upload_Success</members>
 		<members>MS_User_Review</members>
+		<members>MS_Was_Added_Cart</members>
+		<members>MS_Yes</members>
+		<members>MS_You_Have</members>
 		<members>Next_button</members>
 		<members>Not_selected_for_import</members>
 		<members>Please_select_a_boat</members>
@@ -306,6 +345,7 @@
 	</types>
 	<types>
 		<members>Account</members>
+		<members>Order</members>
 		<members>Pricebook2</members>
 		<members>Product2</members>
 		<members>Product_Review__c</members>
@@ -358,8 +398,18 @@
 		<members>contentSlider</members>
 		<members>createNewPricebook</members>
 		<members>createProductRecord</members>
+		<members>customCartItem</members>
+		<members>customCartPage</members>
 		<members>customClockReview</members>
 		<members>customCommunityProductDetailPage</members>
+		<members>customConfirmModal</members>
+		<members>customOrderCountryInput</members>
+		<members>customOrderHistory</members>
+		<members>customOrderHistoryCard</members>
+		<members>customOrderPage</members>
+		<members>customOrderPageItem</members>
+		<members>customOrderProductsModal</members>
+		<members>customOrderProductsModalItem</members>
 		<members>customReviewEdit</members>
 		<members>customReviewForm</members>
 		<members>customReviewItem</members>
@@ -373,6 +423,8 @@
 		<members>filtersForCustomSearch</members>
 		<members>footerCompany</members>
 		<members>getRecentlyViewedProducts</members>
+		<members>imageControl</members>
+		<members>imageTableControl</members>
 		<members>previewFileModal</members>
 		<members>previewFileThumbnailCard</members>
 		<members>previewFileThumbnails</members>
@@ -390,9 +442,11 @@
 		<members>productPriceSlider</members>
 		<members>productProducerPicklist</members>
 		<members>productRecord</members>
+		<members>salesforceCodexDataTable</members>
 		<members>searchBox</members>
 		<members>searchBoxPricebook</members>
 		<members>searchBoxPricebookResult</members>
+		<members>shoppingCartIcon</members>
 		<name>LightningComponentBundle</name>
 	</types>
 	<types>
@@ -412,6 +466,10 @@
 	<types>
 		<members>*</members>
 		<name>NetworkBranding</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>PlatformCachePartition</name>
 	</types>
 	<types>
 		<members>Community Customer</members>

@@ -1511,4 +1511,249 @@
         <shortDescription>on page</shortDescription>
         <value>on page</value>
     </labels>
+    <labels>
+        <fullName>MS_Bank_Transfer</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Bank_Transfer</shortDescription>
+        <value>Direct Bank Transfer</value>
+    </labels>
+    <labels>
+        <fullName>MS_Butt_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Butt_Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>MS_Card</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Card</shortDescription>
+        <value>Card</value>
+    </labels>
+    <labels>
+        <fullName>MS_Cash</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Cash</shortDescription>
+        <value>Cash on Delivery</value>
+    </labels>
+    <labels>
+        <fullName>MS_Checkout</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Checkout</shortDescription>
+        <value>Go to checkout</value>
+    </labels>
+    <labels>
+        <fullName>MS_Continue_Shopp</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Continue_Shopp</shortDescription>
+        <value>CONTINUE SHOPPING</value>
+    </labels>
+    <labels>
+        <fullName>MS_Delete_Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Delete_Product</shortDescription>
+        <value>Delete product?</value>
+    </labels>
+    <labels>
+        <fullName>MS_Deleted_From_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Deleted_From_Cart</shortDescription>
+        <value>Product was deleted from cart</value>
+    </labels>
+    <labels>
+        <fullName>MS_Details_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Details_Price</shortDescription>
+        <value>Price Details</value>
+    </labels>
+    <labels>
+        <fullName>MS_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>MS_Full_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Full_Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>MS_Image_Column</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Image_Column</shortDescription>
+        <value>Image</value>
+    </labels>
+    <labels>
+        <fullName>MS_Items</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Items</shortDescription>
+        <value>Items</value>
+    </labels>
+    <labels>
+        <fullName>MS_Items_In_cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Items_In_cart</shortDescription>
+        <value>items in your shopping cart</value>
+    </labels>
+    <labels>
+        <fullName>MS_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>MS_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Not_Found</shortDescription>
+        <value>Not found</value>
+    </labels>
+    <labels>
+        <fullName>MS_Ok</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Ok</shortDescription>
+        <value>Ok</value>
+    </labels>
+    <labels>
+        <fullName>MS_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Order</shortDescription>
+        <value>Order</value>
+    </labels>
+    <labels>
+        <fullName>MS_Order_Created</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Order_Created</shortDescription>
+        <value>Order was created</value>
+    </labels>
+    <labels>
+        <fullName>MS_Order_History</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Order_History</shortDescription>
+        <value>Order history</value>
+    </labels>
+    <labels>
+        <fullName>MS_Phone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>MS_Place_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Place_Order</shortDescription>
+        <value>Are you sure you want to place order</value>
+    </labels>
+    <labels>
+        <fullName>MS_Place_Order_Butt</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Place_Order_Butt</shortDescription>
+        <value>Place Order</value>
+    </labels>
+    <labels>
+        <fullName>MS_Place_Order_Title</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Place_Order_Title</shortDescription>
+        <value>Place order?</value>
+    </labels>
+    <labels>
+        <fullName>MS_Product_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Product_Order</shortDescription>
+        <value>Product Order</value>
+    </labels>
+    <labels>
+        <fullName>MS_Quantity</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Quantity</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>MS_Remove_Item</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Remove_Item</shortDescription>
+        <value>Remove Item</value>
+    </labels>
+    <labels>
+        <fullName>MS_Sure_To_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Sure_To_Delete</shortDescription>
+        <value>Are you sure you want to delete</value>
+    </labels>
+    <labels>
+        <fullName>MS_Text_Bank_Transfer</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Text_Bank_Transfer</shortDescription>
+        <value>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</value>
+    </labels>
+    <labels>
+        <fullName>MS_Total_Amount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Total_Amount</shortDescription>
+        <value>Total Amount</value>
+    </labels>
+    <labels>
+        <fullName>MS_Total_Amount_Small</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Total_Amount_Small</shortDescription>
+        <value>Total amount</value>
+    </labels>
+    <labels>
+        <fullName>MS_Total_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Total_Price</shortDescription>
+        <value>Total price</value>
+    </labels>
+    <labels>
+        <fullName>MS_Was_Added_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Was_Added_Cart</shortDescription>
+        <value>Product was added to cart</value>
+    </labels>
+    <labels>
+        <fullName>MS_Yes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>MS_You_Have</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_You_Have</shortDescription>
+        <value>You have</value>
+    </labels>
 </CustomLabels>

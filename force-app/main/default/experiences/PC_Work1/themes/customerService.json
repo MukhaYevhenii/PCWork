@@ -40,6 +40,13 @@
     "id" : "f8e673d5-1f43-482c-b3c1-0981397669a4",
     "label" : "Default",
     "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "c:shoppingCartIcon",
+        "id" : "b12cde02-e6c7-40b0-9476-c79c3cfb4daf",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
       "id" : "a887383a-851a-401b-9ab4-087478a337f9",
       "regionName" : "customHeader",
       "type" : "region"

@@ -110,4 +110,5 @@ public without sharing class PW_CacheManage {
     public static List<OrderItem> getProductsOfOrder(Id orderId){
         return [SELECT Id, Quantity, Product2Id , UnitPrice, Product2.Name, Product2.DisplayUrl, TotalPrice FROM OrderItem WHERE OrderId =:orderId];
     }
+
 }

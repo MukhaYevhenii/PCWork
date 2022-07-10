@@ -1,0 +1,15 @@
+input[type="text"], input[type="tel"], input[type="email"], select
+{
+  width: 70%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+  color: #888;
+}
+select{
+  width: 70%;
+  height: 45px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
