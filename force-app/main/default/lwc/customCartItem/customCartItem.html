@@ -1,0 +1,43 @@
+<template>
+    <div class="spinner" if:true={isLoading}>
+        <lightning-spinner  style="z-index: 999;" alternative-text="Loading" variant="brand" size="large">
+        </lightning-spinner>
+    </div>
+    <div class="added-cart-products float-fix">
+        <div class="product-showcase-con left">
+            <div class="product-image-con">
+                <img src={image}>
+            </div>
+        </div>
+        <div class="product-detail-con float-fix left">
+            <div class="product-name">
+                {name}
+            </div>
+            <div class="product-specification left">
+                <div class="ps-level1">
+                    <span>{label.MS_Category} : </span><span>{category}</span>
+                </div>
+                <div class="ps-level2">
+                    <span>{label.MS_Producer_Column} : </span><span>{producer}</span>
+                </div>
+                <div class="product-price">
+                    €{price}
+                </div>
+            </div>
+            <div class="product-actions-btn float-fix left">
+                <div class="pa-quantity-btn left">
+                    <div>
+                        <form>
+                            <input class="quantity-textbox" pattern="\d{4}" min="1" max="99" onchange={handleChangeNumberProducts} value={number} type="number" required>
+                        </form>
+                    </div>
+                </div>
+                <div class="pa-remove-btn left">
+                    <span  class="remove-item-from-cart" style="cursor: pointer;" onclick={handleDeleteFromCart}>
+                        {label.MS_Remove_Item}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

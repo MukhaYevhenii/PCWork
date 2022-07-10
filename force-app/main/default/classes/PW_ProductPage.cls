@@ -7,7 +7,7 @@ public without sharing class PW_ProductPage {
 
     @AuraEnabled(cacheable=true)
     public static List<PricebookEntry> getProductPrice(String recordId){
-        return [SELECT UnitPrice 
+        return [SELECT UnitPrice, Id 
                 FROM PricebookEntry 
                 WHERE Product2Id =:recordId];
     }

@@ -1,4 +1,6 @@
 <template>
+  <lightning-spinner if:true={isLoading} style="z-index: 999;" alternative-text="Loading" variant="brand" size="large">
+  </lightning-spinner>
     <div class = "card-wrapper">
         <div class = "card">
             <div class="myProducts">
@@ -40,7 +42,7 @@
             <template if:true={available}>
               
               <div class="loading-btn">
-                <button><span class="cardButton">{label.MS_Add_To_Cart}</span></button>
+                <button onclick={handleAddToCart}><span class="cardButton">{label.MS_Add_To_Cart}</span></button>
               </div>
             
             </template>

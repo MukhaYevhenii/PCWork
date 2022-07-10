@@ -4,6 +4,7 @@ import getProductPrice from '@salesforce/apex/PW_ProductPage.getProductPrice';
 import getProductReview from '@salesforce/apex/PW_ProductPage.getProductReview';
 import getImages from '@salesforce/apex/PW_ProductPage.getImages';
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
+import addToCache from '@salesforce/apex/PW_CacheManage.addToCache';
 
 import NAME_FIELD from '@salesforce/schema/Product2.Name';
 import PRODUCTCODE_FIELD from '@salesforce/schema/Product2.ProductCode';
@@ -23,6 +24,7 @@ import MS_Not_Available from '@salesforce/label/c.MS_Not_Available';
 import MS_Category from '@salesforce/label/c.MS_Category';
 import MS_Product_Code_Placeholder from '@salesforce/label/c.MS_Product_Code_Placeholder';
 import MS_Add_To_Cart from '@salesforce/label/c.MS_Add_to_cart';
+import MS_Was_Added_Cart from '@salesforce/label/c.MS_Was_Added_Cart';
 
 const fields = [NAME_FIELD, PRODUCER_FIELD, PRODUCTCODE_FIELD, PRODUCTFAMILY_FIELD, MODEL_FIELD, DESCRIPTION_FIELD, AVAILABLE_FIELD];
 
@@ -33,6 +35,7 @@ export default class CustomCommunityProductDetailPage extends LightningElement {
     @track price;
     @track rating;
     @track countRatig;
+    @track isLoading = false;
 
     label={
         MS_Review_Count,
@@ -103,6 +106,23 @@ export default class CustomCommunityProductDetailPage extends LightningElement {
                 }),
             );
         }
+    }
+
+    handleAddToCart(){
+        this.isLoading = true;
+        addToCache({product: this.recordId})
+            .then(result => {})
+            .catch(error => {})
+            .finally(()=>{
+                setTimeout(() => {
+                    this.isLoading = false;
+                    const toastEvent = new ShowToastEvent ({
+                        message: MS_Was_Added_Cart,
+                        variant: "success"
+                    })
+                    this.dispatchEvent(toastEvent);
+                }, 1000);
+            });
     }
 
     myImageFunction(event) {
