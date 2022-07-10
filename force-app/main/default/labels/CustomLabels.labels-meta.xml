@@ -22,6 +22,13 @@
         <value>Cancel</value>
     </labels>
     <labels>
+        <fullName>MS_Your_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS_Your_Order</shortDescription>
+        <value>Your Order</value>
+    </labels>
+    <labels>
         <fullName>MS_Clear</fullName>
         <language>en_US</language>
         <protected>true</protected>
