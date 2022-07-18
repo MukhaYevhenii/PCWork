@@ -1,0 +1,84 @@
+<template>
+    <div if:true={confimModal}>
+        <c-custom-confirm-modal title={label.MS_Send_Case_Modal_Title} content={label.MS_Send_Case_Modal} onclosemodal={handleCloseModal}></c-custom-confirm-modal>
+    </div>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+        </lightning-spinner>
+      </template>
+      <div if:true={notNull} style="width: 60%; margin-left: 20%;">
+        <lightning-record-edit-form if:false={caseCreated}
+        class="form"
+        object-api-name="Case"
+        onsubmit={handleSubmit}
+        onsuccess={handleSuccess}>
+        <div style="display: flex; justify-content: center; flex-direction: column; margin-bottom: 2%;">
+            <span style="font-size: 20px; font-weight: bolder; text-align: center;">{label.MS_Contact_Supp_Title}</span>
+            <span style="font-size: 14px;text-align: center;">{label.MS_Contact_Supp_Content}</span>
+        </div>
+        <label for="caseReasonn"><span style="color: red;">*</span>{label.MS_Case_Reason}</label>
+        <lightning-input-field id="caseReasonn" variant="label-hidden" field-name={caseReason} required></lightning-input-field>
+        <label for="caseSub"><span style="color: red;">*</span>{label.MS_Case_Title}</label>
+        <lightning-input-field id="caseSub" variant="label-hidden" field-name={caseSubject} required></lightning-input-field>
+        <label for="caseDesc"><span style="color: red;">*</span>{label.MS_Case_Description}</label>
+        <lightning-input-field id="caseDesc" variant="label-hidden" field-name={caseDescription} required></lightning-input-field>
+        <label for="prodPickList"><span style="color: red;">*</span>{label.MS_Case_Product}</label>
+        <lightning-combobox 
+            id="prodPickList" 
+            variant="label-hidden" 
+            required name="progress" 
+            placeholder={label.MS_Product}
+            value={valueProduct}
+            options={productPickList} 
+            onchange={handleGetProduct}>
+        </lightning-combobox>
+        <label for="ordPickList"><span style="color: red;">*</span>{label.MS_Order_Number}</label>
+        <lightning-combobox 
+            id="ordPickList" 
+            variant="label-hidden" 
+            required name="progress" 
+            placeholder={label.MS_Order_Number}
+            value={value}
+            options={orderPickList} 
+            onchange={handleGetOrder}>
+        </lightning-combobox>
+        <ul style="display: flex; justify-content: center; flex-direction: column" class="slds-m-around_medium" if:true={uploadedFile.length}>
+            <template for:each={uploadedFile} for:item="file">
+                <li key={file.filename} style="margin-top: 1%; display: flex; justify-content: center;">
+                    <lightning-icon 
+                        icon-name="utility:file"
+                        size="xx-small" 
+                        class="slds-m-right_x-small">
+                    </lightning-icon>
+                    {file.filename}
+                    <lightning-button-icon 
+                        icon-name="utility:delete"    
+                        variant="bare" 
+                        alternative-text="Delete"   
+                        value={file.filename}
+                        onclick={handleDeleteFile}
+                        class="slds-m-left_xx-small" 
+                        title="Delete">
+                    </lightning-button-icon>
+                </li>
+            </template>
+        </ul>
+        <lightning-input type="file" multiple style="display: flex; justify-content: center; margin-top: 2%;" 
+            accept=".xlsx, .xls, .csv, .png, .jpg, .jpeg, .doc, .docx, .pdf" onchange={openfileUpload}>
+        </lightning-input>
+        <div style="display: flex; justify-content: center; margin-top: 2%;">
+            <lightning-button class="button" label={label.MS_Submit} type="submit" variant="brand"></lightning-button>
+        </div>
+    </lightning-record-edit-form>
+    </div>
+    <div if:false={notNull} style="display: flex; justify-content: center; flex-direction: column">
+        <span style="text-align: center;">{label.MS_Case_Contact_EmpyPage}</span>
+        <span style="text-align: center;">{label.MS_Case_Contact_EmpyPage_Content}</span>
+    </div>
+    <div if:false={caseCreated} style="display: flex; justify-content: center; margin-top: 1%;">
+        <a href="/s/faq">{label.MS_Question}</a>
+    </div>
+    <div if:true={caseCreated}>
+        <c-custom-success-page text-review="true"></c-custom-success-page>
+    </div>
+</template>

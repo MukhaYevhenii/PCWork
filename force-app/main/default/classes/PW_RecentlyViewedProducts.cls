@@ -7,7 +7,7 @@ public without sharing class PW_RecentlyViewedProducts {
         for (RecentlyViewed s : recentlyViewedProductsId) {
             productIds.add(s.Id);
         }
-        return [SELECT Id, Name, Model__c, Family, Producer__c, DisplayUrl FROM Product2 WHERE Id IN:productIds ORDER BY Name LIMIT 1 OFFSET :offsetNumber];
+        return [SELECT Id, Name, Model__c, Family, Producer__c, DisplayUrl, Available__c FROM Product2 WHERE Id IN:productIds ORDER BY Name LIMIT 1 OFFSET :offsetNumber];
     }
 
     @AuraEnabled(cacheable=true)

@@ -199,7 +199,7 @@ export default class CustomOrderPage extends  NavigationMixin(LightningElement) 
         fields.Payment__c = this.paymentValue;
         fields.EffectiveDate = this.date;
         fields.ContractId = this.contractId;
-        fields.Status = 'Draft';
+        fields.Status = 'Processing';
 
         if(this.disableShipping){
             fields.BillingCity = fields.ShippingCity;

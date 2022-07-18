@@ -1,0 +1,17 @@
+<template>
+	<section class="preguntas-frecuentes clearfix">	
+		<div class="preguntas-frecuentes-contenedor serif">
+			<div class="preguntas-frecuentes-encabezado-linea-roja"></div>
+			<h1 class="preguntas-frecuentes-encabezado" style="margin-bottom: -8%; margin-top: -10%;">{label.MS_Common_Users_Problems}</h1>
+        <ul class="preguntas" >
+          <template for:each={listKnowledge} for:item="knowledge">
+            <li key={knowledge.Id}  >
+              <input class="pregunta-input" type="checkbox" name="pregunta-frecuente" id={knowledge.Id}/>
+              <label for={knowledge.Id} class="pregunta">{knowledge.Parent.Question__c}</label>
+              <div class="respuesta"><p>{knowledge.Parent.Answer__c}</p></div>
+            </li>
+         </template>  
+        </ul>
+      </div>      
+</section>
+</template>

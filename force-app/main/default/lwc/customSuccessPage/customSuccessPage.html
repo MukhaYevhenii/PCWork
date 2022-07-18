@@ -3,5 +3,6 @@
         <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
         <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
     </svg>
-    <p style="text-align: center; font-size: 21px;">We are happy that you has reviewed this product!</p>
+    <p if:false={textReview} style="text-align: center; font-size: 21px;">{label.MS_Success_Page_Text}</p>
+    <p if:true={textReview} style="text-align: center; font-size: 21px;">{label.MS_Success_Page_Text2}</p>
 </template>
