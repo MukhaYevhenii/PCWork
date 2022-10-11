@@ -1,0 +1,3 @@
+<aura:component implements="force:hasRecordId,forceCommunity:availableForAllPAgeTypes" access="global">
+    <c:customCommunityProductDetailPage recordId="{!v.recordId}" />
+</aura:component>

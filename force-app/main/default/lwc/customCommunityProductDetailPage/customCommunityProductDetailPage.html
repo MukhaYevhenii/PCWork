@@ -1,0 +1,55 @@
+<template>
+  <lightning-spinner if:true={isLoading} style="z-index: 999;" alternative-text="Loading" variant="brand" size="large">
+  </lightning-spinner>
+    <div class = "card-wrapper">
+        <div class = "card">
+            <div class="myProducts">
+                <div class="myProducts-gallery">
+                  <div class="slds-feed reviews-style slds-is-relative slds-scrollable_y" style="max-height: 300px;">
+                    <template for:each={poductImagesList} for:item="image">
+                      <img src={image} key={image.Id} data-value={image} onclick={myImageFunction}>
+                    </template>
+                  </div>
+                </div>
+                <div class="image-container">
+                    <img id="img-Box" src={mainImage} alt="click here">
+                </div>
+            </div>
+          <div class = "product-content">
+            <h2 class = "product-title">{name}</h2>
+            <div class = "product-rating">
+              <c-custom-star-rating  
+              static-color="#ffc107" 
+              rating={rating}
+              read-only-star="true" 
+              show-half-stars="true" 
+              size="xsmall"
+              > </c-custom-star-rating>
+              <div style="display:flex; align-items: center;"><span>({countRatig} {label.MS_Review_Count})</span></div>
+            </div> 
+            <div class = "product-price">
+              <p class = "new-price">{label.MS_Price_Without_Symbol}: <span>€{price}</span></p>
+            </div>
+            <div class = "product-detail">
+              <h2>{label.MS_About_Item}: </h2>
+              <p>{description}</p>
+              <ul>
+                <li><lightning-icon size="small" icon-name="action:approval"></lightning-icon> {label.MS_Available_Column}: <span if:true={available}>{label.MS_In_Strore}</span> <span if:false={available}>{label.MS_Not_Available}</span></li>
+                <li><lightning-icon size="small" icon-name="action:approval"></lightning-icon> {label.MS_Category}: <span>{category}</span></li>
+                <li if:true={code}><lightning-icon size="small" icon-name="action:approval"></lightning-icon> {label.MS_Product_Code_Placeholder}: <span>{code}</span></li>
+              </ul>
+            </div>
+            <template if:true={available}>
+              
+              <div class="loading-btn">
+                <button onclick={handleAddToCart}><span class="cardButton">{label.MS_Add_To_Cart}</span></button>
+              </div>
+            
+            </template>
+            <template if:false={available}>
+              <img src="https://luxeaccessoria.com/shop/assets/img/no-product-found.png" alt="" style="width: auto; max-height: 200px;">
+            </template>
+            </div>
+        </div>
+      </div>
+</template>

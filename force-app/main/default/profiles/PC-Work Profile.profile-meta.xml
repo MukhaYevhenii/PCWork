@@ -6,8 +6,16 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>PW_ContentDistributionLinks</apexClass>
+        <apexClass>PW_CacheManage</apexClass>
         <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_CacheManageTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_ContentDistributionLinks</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_ContentDistributionLinksTest</apexClass>
@@ -23,7 +31,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchPricebook</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchPricebookTest</apexClass>
@@ -31,7 +39,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchProduct</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_CustomSearchProductTest</apexClass>
@@ -39,7 +47,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_EditRecordController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_EditRecordControllerTest</apexClass>
@@ -47,7 +55,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FileController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FileControllerTest</apexClass>
@@ -55,7 +63,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FilePreviewAndDownloadController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_FilePreviewAndDownloadControllerTest</apexClass>
@@ -63,7 +71,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GetProductsFromPricebook</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GetProductsFromPricebookTest</apexClass>
@@ -71,7 +79,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GoogleAuth</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_GoogleAuthTest</apexClass>
@@ -79,10 +87,18 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_NewPricebookController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_NewPricebookControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_ProductPage</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_ProductPageTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -95,10 +111,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PW_RecentlyViewedProducts</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PW_RecentlyViewedProductsTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PW_ShoppingCartWrapper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
@@ -279,6 +299,111 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Order.ActivatedById</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.ActivatedDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.BillToContactId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.BillingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.CompanyAuthorizedById</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.CompanyAuthorizedDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.ContractEndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.ContractName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.CustomerAuthorizedById</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.CustomerAuthorizedDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.Name</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.OpportunityId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.OrderReferenceNumber</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.Payment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.PoDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.PoNumber</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.ShipToContactId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.ShippingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.TotalAmount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Pricebook2.End_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -290,7 +415,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Available__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -320,7 +445,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Model__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -340,13 +465,42 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Rating__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.StockKeepingUnit</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product_Review__c.AcceptReview__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product_Review__c.Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product_Review__c.Product__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.DB_Region__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.PhotoUrl__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Procces_Builder_Approve_Review</flow>
+    </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>checkActivePricebooks</flow>
@@ -384,11 +538,19 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Product_Review__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Search_Product</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Order</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

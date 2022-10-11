@@ -27,12 +27,12 @@
             <div class="h-bg">
               <div class="h-bg-inner"></div>
             </div>
-            <a class="cart" href="#">
+            <span class="cart">
               <span class="price">€ {!v.record.UnitPrice}</span>
               <span class="add-to-cart">
                 <span class="txt">{!$Label.c.MS_Add_to_cart}</span>
               </span>
-            </a>
+            </span>
           </div>
         </div>
       </div>

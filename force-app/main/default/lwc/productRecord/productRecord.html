@@ -1,4 +1,6 @@
 <template>
+         <lightning-spinner if:true={isLoading} style="z-index: 999;" alternative-text="Loading" variant="brand" size="large">
+         </lightning-spinner>
     <div class="container page-wrapper">
         <div class="page-inner">
           <div class="row">
@@ -11,7 +13,7 @@
                 </div>
                 <div class="img-info">
                   <div class="info-inner">
-                    <span class="p-name"><a style="color:black">{productRecord.Name}</a></span>
+                    <span class="p-name"><a style="color:black" href={sfdcBaseURL}>{productRecord.Name}</a></span>
                     <span class="p-company">{productRecord.Producer__c}</span>
                   </div>
                   <div class="a-size"><span class="size">{productRecord.Family}</span></div>
@@ -21,7 +23,7 @@
                 <div class="h-bg">
                   <div class="h-bg-inner"></div>
                 </div>
-                <a class="cart" href="#">
+                <span class="cart" style="cursor: pointer;" onclick={handleAddToCart} >
                   <template if:true={usingPrice}>
                     <span class="price">€ {productRecord.UnitPrice}</span>
                   </template>
@@ -31,7 +33,7 @@
                   <span class="add-to-cart">
                     <span class="txt">Add in cart</span>
                   </span>
-                </a>
+                </span>
               </div>
             </div>
           </div>

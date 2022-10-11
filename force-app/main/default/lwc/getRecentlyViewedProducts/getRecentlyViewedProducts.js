@@ -36,6 +36,9 @@ export default class RecentlyViewedProducts extends LightningElement {
         if(data){
             data.forEach(r=> {
                 this.numberOfNewProducts = r.totalRecords;
+                if(this.numberOfNewProducts > 5){
+                    this.numberOfNewProducts = 5;
+                }
             });
             if((this.offset + 1) >= this.numberOfNewProducts){
                 this.isLastPage = true;

@@ -1,0 +1,18 @@
+<template>
+    <div if:true={isModalOpen}>
+        <c-custom-order-products-modal order={order} onclosemodal={handleCloseModal}>
+        </c-custom-order-products-modal>
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 2%;">
+        <span style="font-size: 24px; font-weight: bold;">{label.MS_Order_History}</span>
+    </div>
+    <div style="display: flex;flex-wrap: wrap; width:100%; justify-content: space-around; ">
+        <template for:each={ordersList} for:item="order">
+            <c-custom-order-history-card 
+                onopenmodal={handleOpenModal}
+                key={order.Id} 
+                order={order}>
+            </c-custom-order-history-card>
+        </template>
+    </div>
+</template>

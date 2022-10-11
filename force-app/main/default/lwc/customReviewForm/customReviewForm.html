@@ -1,0 +1,50 @@
+<template>
+    <hr />
+    <div class="spinner">
+        <template if:true={isLoading}>
+             <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+             </lightning-spinner>
+        </template>
+    </div>
+    <div style="max-height:370px;width:550px;margin-top:10px;margin-left:-10px;" if:false={hasUserReview}>
+    <lightning-record-edit-form object-api-name={productReviewObject} onsuccess={handleSuccess} onsubmit={handleSubmit}>
+        <lightning-layout multiple-rows vertical-align="start">
+            <lightning-layout-item size="8" padding="horizontal-small">
+                <div class="slds-form-element" style="margin-left:5px;">                    
+                    <label for={nameField} class="slds-form-element__label" >{label.MS_Admin}</label>
+                    <div class="slds-form-element__control">
+                        <lightning-input-field variant="label-hidden" field-name={nameField} required></lightning-input-field>
+                    </div>                    
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" padding="horizontal-small">
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="record-name">{label.MS_Rating}</label>
+                    <div class="slds-form-element__control" style="margin-left:-23px;">
+                        <c-custom-star-rating onratingchange={handleRatingChanged} color-positive="#fdd500"
+                        color-default="#fdd500"
+                        color-ok="#fdd500"
+                        rating={rating}
+                        color-negative="#fdd500" space-between="small" number-of-stars="5" size="small"></c-custom-star-rating>
+                    </div>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <lightning-input-field field-name={commentField} required></lightning-input-field>
+            </lightning-layout-item>
+        </lightning-layout>
+        <div class="slds-align_absolute-center" style="margin-top: 5px">
+            <lightning-button label="Submit" type="submit" icon-name="utility:save"></lightning-button>
+        </div>
+    </lightning-record-edit-form>
+   </div>
+   <div if:true={hasUserReview}>
+        <div if:true={acceptedReview}>
+            <c-custom-success-page ></c-custom-success-page>
+        </div>
+        <div if:false={acceptedReview}>
+            <c-custom-clock-review ></c-custom-clock-review>
+        </div>
+   </div>
+ 
+</template>

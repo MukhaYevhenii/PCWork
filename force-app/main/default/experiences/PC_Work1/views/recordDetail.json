@@ -9,28 +9,9 @@
     "type" : "region"
   }, {
     "components" : [ {
-      "componentAttributes" : {
-        "recordId" : "{!recordId}"
-      },
-      "componentName" : "forceCommunity:recordHeadline",
-      "id" : "ddcce01a-f201-4865-bfec-0a3ca3a5b0bb",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : {
-        "detailsTabLabel" : "Details",
-        "discussionsTabLabel" : "Feed",
-        "recordId" : "{!recordId}",
-        "relatedTabLabel" : "Related",
-        "tab1Type" : "details",
-        "tab2Type" : "related",
-        "tab3Type" : "chatter",
-        "tab4Type" : "none",
-        "timelineTabLabel" : "Activity"
-      },
-      "componentName" : "forceCommunity:recordHomeTabs",
-      "id" : "23535f24-cd77-4d64-bc9a-c8263b64b858",
+      "componentAttributes" : { },
+      "componentName" : "c:productCommunityDetailPage",
+      "id" : "204e6053-a840-42bc-b5ef-13ad4403daa9",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
@@ -39,6 +20,62 @@
     "regionName" : "content",
     "type" : "region"
   }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "d597ea9b-f288-4ae1-8277-29976f9c1817",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "7a96d3a0-601a-4b55-8ff3-dbd30fa9723a",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Review"
+          }, {
+            "UUID" : "a2640d89-8147-49ec-a268-8f869b5edd1a",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Newest Products"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "d597ea9b-f288-4ae1-8277-29976f9c1817",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:customReviewComments",
+          "id" : "ba4af5ef-f7c3-427f-8ed8-c9c5052998d9",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7a96d3a0-601a-4b55-8ff3-dbd30fa9723a",
+        "regionLabel" : "Review",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:contentSlider",
+          "id" : "aad31875-95e4-4cfc-bc34-89808719477d",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a2640d89-8147-49ec-a268-8f869b5edd1a",
+        "regionLabel" : "Newest Products",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "5ffd892b-7b27-4306-8293-3b0f6cebccfa",
     "regionName" : "footer",
     "type" : "region"

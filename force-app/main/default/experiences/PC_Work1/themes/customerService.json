@@ -1,6 +1,6 @@
 {
   "activeBrandingSetId" : "b6adc373-e04c-4095-9b69-2ebf1fa635c8",
-  "customCSS" : "",
+  "customCSS" : ".cCenterPanel {\n  min-height: calc(100vh - 70px);\n}\n.cFooterPanel {\n  height: 50px;\n}",
   "developerName" : "service",
   "id" : "22ccac33-bbd8-4789-a0ef-e6a6adfceb71",
   "label" : "Customer Service",
@@ -40,6 +40,13 @@
     "id" : "f8e673d5-1f43-482c-b3c1-0981397669a4",
     "label" : "Default",
     "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "c:shoppingCartIcon",
+        "id" : "b12cde02-e6c7-40b0-9476-c79c3cfb4daf",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
       "id" : "a887383a-851a-401b-9ab4-087478a337f9",
       "regionName" : "customHeader",
       "type" : "region"
@@ -84,8 +91,8 @@
     }, {
       "components" : [ {
         "componentAttributes" : {
-          "NavigationMenuEditorRefresh" : "",
-          "hideAppLauncher" : false,
+          "NavigationMenuEditorRefresh" : "Default_Navigation",
+          "hideAppLauncher" : true,
           "hideHomeText" : false
         },
         "componentName" : "forceCommunity:globalNavigation",
@@ -101,6 +108,13 @@
       "regionName" : "customRegion",
       "type" : "region"
     }, {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "c:communityFooter",
+        "id" : "47ab0bc6-9633-49e3-99c8-1b98675c1d75",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
       "id" : "62d57f64-9459-4bee-bf59-cfdcc5a65ae1",
       "regionName" : "footer",
       "type" : "region"

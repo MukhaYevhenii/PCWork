@@ -1,0 +1,29 @@
+<template>
+    <template if:false={reviewsToShow}>
+        <div class="slds-align_absolute-center " style="margin-top: 3%;">No reviews available</div>
+    </template>
+    <template if:true={reviewsToShow}>
+        <div class="slds-feed reviews-style slds-is-relative " style="margin-left:0; min-width: 100%">
+            <ul class="slds-feed__list">
+                <template for:each={productReviews} for:item="productReview">
+                    <c-custom-review-item 
+                        key={productReview.Id} 
+                        product-id={productId} 
+                        onhasreview={handleHasReviewCheck} 
+                        ondeletereview={handleSendRefreshEvent}
+                        onrefreshprintlist={handleRefreshEventList}
+                        product-review={productReview} >
+                    </c-custom-review-item>
+                </template>
+            </ul>
+        </div>
+        <c-custom-review-pagination
+            page={page}
+            pages={pages}
+            total={total}
+            label="reviews"
+            onpreviouspage={handlePagePrevious}
+            onnextpage={handlePageNext}
+        ></c-custom-review-pagination>
+    </template>
+</template>

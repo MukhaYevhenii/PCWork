@@ -4,35 +4,31 @@
   "id" : "4483fb6f-1b28-408c-8ff2-888a424ecdbb",
   "label" : "User Profile",
   "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "knowledgeableAboutTitle" : "Knows About",
+        "maxTopics" : 5,
+        "showFullPhotoAsCircle" : true,
+        "showKnowledgeableAbout" : false,
+        "showPhoto" : true,
+        "showReputationInInfluenceCard" : false,
+        "showStats" : false,
+        "userId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:userProfileBody",
+      "id" : "362c7407-8a81-4183-955f-324f952be3bd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "5516bf60-6642-4db5-bee2-5bf4fea41bd4",
     "regionName" : "header",
     "type" : "region"
   }, {
     "components" : [ {
-      "componentAttributes" : {
-        "caseCreateLabel" : "Create Case",
-        "caseFilterName" : "AllOpenCases",
-        "caseHeaderLabel" : "My Cases",
-        "casesTabLabel" : "Cases",
-        "detailsTabLabel" : "Details",
-        "feedTabLabel" : "Feed",
-        "knowledgeableAboutTitle" : "Knows About",
-        "maxTopics" : 5,
-        "recognitionbuttonLabel" : "Give",
-        "relatedTabLabel" : "Related",
-        "showAllUpdates" : false,
-        "showBadges" : true,
-        "showFullPhotoAsCircle" : true,
-        "showKnowledgeableAbout" : true,
-        "showRelatedList" : true,
-        "showReputationInInfluenceCard" : false,
-        "showStats" : true,
-        "userBadgesTitle" : "Recognition Badges",
-        "userId" : "{!recordId}",
-        "userStatsTitle" : "Influence"
-      },
-      "componentName" : "forceCommunity:userRecordHome",
-      "id" : "49e2da6c-7bab-4e91-b98e-2519fce3fe91",
+      "componentAttributes" : { },
+      "componentName" : "c:customOrderHistory",
+      "id" : "bb73bf26-0172-4e4a-ba4c-243828314687",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
